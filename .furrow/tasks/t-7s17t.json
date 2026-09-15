@@ -1,0 +1,47 @@
+{
+  "id": "t-7s17t",
+  "title": "候補 3 件に空き・料金・設備の問い合わせメールを送信する",
+  "status": "done",
+  "priority": 130,
+  "value": 5,
+  "effort": 2,
+  "labels": [
+    "external-wait",
+    "venue-selection"
+  ],
+  "repos": [
+    "akira-toriyama/furrow-test"
+  ],
+  "deps": [
+    "t-0n6gq",
+    "t-vz1cb"
+  ],
+  "refs": [
+    "file:notes/venue-inquiry-template.md:1"
+  ],
+  "checklist": [
+    {
+      "text": "質問テンプレを 1 通にまとめる",
+      "done": false
+    },
+    {
+      "text": "A/B/C の 3 件に送信する",
+      "done": false
+    },
+    {
+      "text": "返信期限(9/22)を本文に明記する",
+      "done": false
+    },
+    {
+      "text": "送信済みを比較表に記録する",
+      "done": false
+    }
+  ],
+  "created": "2026-09-15T14:57:26Z",
+  "updated": "2026-09-15T14:57:41Z",
+  "closed": "2026-09-15T14:57:26Z",
+  "reviewed": null,
+  "body": "bodies/t-7s17t.md",
+  "epic": "e-jd4kb",
+  "due": "2026-09-14T14:59:59Z"
+}

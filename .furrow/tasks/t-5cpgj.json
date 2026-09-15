@@ -1,0 +1,35 @@
+{
+  "id": "t-5cpgj",
+  "title": "調理風景のタイムラプス動画を撮る",
+  "status": "icebox",
+  "priority": 170,
+  "value": 1,
+  "effort": 2,
+  "labels": [
+    "nice-to-have",
+    "photo"
+  ],
+  "repos": [
+    "akira-toriyama/furrow-test"
+  ],
+  "deps": [
+    "t-5d50g"
+  ],
+  "refs": [],
+  "checklist": [
+    {
+      "text": "三脚かスマホスタンドの要否を確認",
+      "done": false
+    },
+    {
+      "text": "厨房の電源とスマホの充電を確保",
+      "done": false
+    }
+  ],
+  "created": "2026-09-15T14:57:33Z",
+  "updated": "2026-09-15T14:57:44Z",
+  "closed": null,
+  "reviewed": null,
+  "body": "bodies/t-5cpgj.md",
+  "epic": "e-hp2zp"
+}

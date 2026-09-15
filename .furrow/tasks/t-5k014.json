@@ -1,0 +1,43 @@
+{
+  "id": "t-5k014",
+  "title": "肉の火入れリハーサルを本番と同じ手順で行い所要時間を実測する",
+  "status": "backlog",
+  "priority": 700,
+  "value": 4,
+  "effort": 3,
+  "labels": [
+    "cooking",
+    "rehearsal",
+    "timeline"
+  ],
+  "repos": [
+    "akira-toriyama/furrow-test"
+  ],
+  "deps": [
+    "t-1r7ak"
+  ],
+  "refs": [],
+  "checklist": [
+    {
+      "text": "予熱開始から提供までの分数をストップウォッチで計測",
+      "done": false
+    },
+    {
+      "text": "芯温と休ませ時間をメモ",
+      "done": false
+    },
+    {
+      "text": "1回目の実測値を dayof-01 の逆算表に反映",
+      "done": false
+    }
+  ],
+  "created": "2026-09-15T14:57:31Z",
+  "updated": "2026-09-15T14:57:43Z",
+  "closed": null,
+  "reviewed": null,
+  "body": "bodies/t-5k014.md",
+  "epic": "e-hp2zp",
+  "due": "2026-10-31T09:00:00Z",
+  "repeat": "FREQ=WEEKLY;BYDAY=SA",
+  "repeat_anchor": "2026-10-31T09:00:00Z"
+}

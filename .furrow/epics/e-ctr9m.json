@@ -1,0 +1,25 @@
+{
+  "id": "e-ctr9m",
+  "title": "前日までの仕込みを終える",
+  "goal": "当日仕上げ以外の仕込みが終わり、運搬手段と当日タイムテーブルが用意できている",
+  "active": false,
+  "labels": [
+    "event",
+    "prep"
+  ],
+  "repos": [
+    "akira-toriyama/furrow-test"
+  ],
+  "meta": {
+    "slug": "prep"
+  },
+  "created": "2026-09-15T14:53:57Z",
+  "updated": "2026-09-15T14:53:58Z",
+  "closed": null,
+  "body": "bodies/e-ctr9m.md",
+  "deps": [
+    "e-38f7f"
+  ],
+  "standing": false,
+  "pinned": false
+}

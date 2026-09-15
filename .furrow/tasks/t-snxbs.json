@@ -1,0 +1,46 @@
+{
+  "id": "t-snxbs",
+  "title": "支出済み額を集計して残予算を body に更新する",
+  "status": "backlog",
+  "priority": 240,
+  "value": 3,
+  "effort": 1,
+  "labels": [
+    "budget",
+    "recurring"
+  ],
+  "repos": [
+    "akira-toriyama/furrow-test"
+  ],
+  "deps": [
+    "t-xvfp7"
+  ],
+  "refs": [],
+  "checklist": [
+    {
+      "text": "今週のレシートを1行ずつ転記する",
+      "done": false
+    },
+    {
+      "text": "系統別（食材/飲み物/消耗品/会場）の合計を更新する",
+      "done": false
+    },
+    {
+      "text": "残額を計算する",
+      "done": false
+    },
+    {
+      "text": "枠を超えた系統があれば menu-17 に持ち込む",
+      "done": false
+    }
+  ],
+  "created": "2026-09-15T14:57:22Z",
+  "updated": "2026-09-15T14:57:39Z",
+  "closed": null,
+  "reviewed": null,
+  "body": "bodies/t-snxbs.md",
+  "epic": "e-38f7f",
+  "due": "2026-10-17T14:59:59Z",
+  "repeat": "FREQ=WEEKLY;BYDAY=SA",
+  "repeat_anchor": "2026-10-17T14:59:59Z"
+}

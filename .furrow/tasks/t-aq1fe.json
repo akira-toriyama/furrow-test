@@ -1,0 +1,51 @@
+{
+  "id": "t-aq1fe",
+  "title": "16:30 に提供手順を読み合わせアレルギー皿を分離する",
+  "status": "backlog",
+  "priority": 790,
+  "value": 5,
+  "effort": 2,
+  "labels": [
+    "allergy",
+    "briefing",
+    "food-safety"
+  ],
+  "repos": [
+    "akira-toriyama/furrow-test"
+  ],
+  "deps": [
+    "t-9gyjs",
+    "t-j5k1v",
+    "t-xvfp7"
+  ],
+  "refs": [],
+  "checklist": [
+    {
+      "text": "差し替え皿にマスキングテープで名前を貼る",
+      "done": false
+    },
+    {
+      "text": "専用のトングと置き場所を決める",
+      "done": false
+    },
+    {
+      "text": "差し替え皿の提供者を1名に固定",
+      "done": false
+    },
+    {
+      "text": "誤提供が起きた場合の回収手順を口頭で共有",
+      "done": false
+    },
+    {
+      "text": "厨房の壁に時刻表を貼る",
+      "done": false
+    }
+  ],
+  "created": "2026-09-15T14:57:32Z",
+  "updated": "2026-09-15T14:57:44Z",
+  "closed": null,
+  "reviewed": null,
+  "body": "bodies/t-aq1fe.md",
+  "epic": "e-hp2zp",
+  "due": "2026-11-21T07:30:00Z"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "t-44tx0",
+  "title": "当日写真を集約して共有アルバムのリンクを全員に配る",
+  "status": "backlog",
+  "priority": 640,
+  "value": 3,
+  "effort": 2,
+  "labels": [
+    "guests",
+    "photos"
+  ],
+  "repos": [
+    "akira-toriyama/furrow-test"
+  ],
+  "deps": [
+    "t-q2d3q"
+  ],
+  "refs": [],
+  "checklist": [
+    {
+      "text": "当日中にアルバムを作ってリンクを配る",
+      "done": false
+    },
+    {
+      "text": "SNS 転載 NG の申告を記録する",
+      "done": false
+    },
+    {
+      "text": "料理5品の完成写真が揃っているか確認する",
+      "done": false
+    }
+  ],
+  "created": "2026-09-15T14:57:29Z",
+  "updated": "2026-09-15T14:57:43Z",
+  "closed": null,
+  "reviewed": null,
+  "body": "bodies/t-44tx0.md",
+  "epic": "e-06m7s",
+  "due": "2026-11-25T14:59:59Z"
+}

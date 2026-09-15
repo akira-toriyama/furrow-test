@@ -1,0 +1,46 @@
+{
+  "id": "t-9vd5f",
+  "title": "5 品の仕込み工程を日付に割り付けた工程表を作る",
+  "status": "backlog",
+  "priority": 270,
+  "value": 5,
+  "effort": 3,
+  "labels": [
+    "backward-plan",
+    "planning",
+    "schedule"
+  ],
+  "repos": [
+    "akira-toriyama/furrow-test"
+  ],
+  "deps": [
+    "t-95rjw",
+    "t-wa29c"
+  ],
+  "refs": [],
+  "checklist": [
+    {
+      "text": "品目ごとの冷蔵保存上限日数を書く",
+      "done": false
+    },
+    {
+      "text": "当日仕上げの 1 品を工程表から外して別行にする",
+      "done": false
+    },
+    {
+      "text": "一次買い出し日と最終買い出し日を工程表に入れる",
+      "done": false
+    },
+    {
+      "text": "保冷剤を凍らせる枠を入れる",
+      "done": false
+    }
+  ],
+  "created": "2026-09-15T14:57:23Z",
+  "updated": "2026-09-15T14:57:39Z",
+  "closed": null,
+  "reviewed": null,
+  "body": "bodies/t-9vd5f.md",
+  "epic": "e-ctr9m",
+  "due": "2026-11-05T14:59:59Z"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "e-06m7s",
+  "title": "撤収・精算・振り返りを終える",
+  "goal": "22:00 撤収完了、精算と返金確認が済み、振り返りが board に残っている",
+  "active": false,
+  "labels": [
+    "event",
+    "wrap"
+  ],
+  "repos": [
+    "akira-toriyama/furrow-test"
+  ],
+  "meta": {
+    "slug": "wrap"
+  },
+  "created": "2026-09-15T14:53:57Z",
+  "updated": "2026-09-15T14:53:58Z",
+  "closed": null,
+  "body": "bodies/e-06m7s.md",
+  "deps": [
+    "e-hp2zp"
+  ],
+  "standing": false,
+  "pinned": false
+}

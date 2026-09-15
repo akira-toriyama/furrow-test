@@ -1,0 +1,43 @@
+{
+  "id": "t-9e9y1",
+  "title": "機材不動・食材忘れのリカバリ手順を A4 1枚にまとめて当日持参する",
+  "status": "ready",
+  "priority": 170,
+  "value": 4,
+  "effort": 2,
+  "labels": [
+    "d0-ops",
+    "recovery",
+    "risk"
+  ],
+  "repos": [
+    "akira-toriyama/furrow-test"
+  ],
+  "deps": [],
+  "refs": [],
+  "checklist": [
+    {
+      "text": "会場管理者の緊急連絡先を記載",
+      "done": false
+    },
+    {
+      "text": "徒歩圏のスーパー・コンビニと閉店時刻を記載",
+      "done": false
+    },
+    {
+      "text": "オーブン不動時の代替（鍋＋コンロ）を1品ずつ決める",
+      "done": false
+    },
+    {
+      "text": "冷蔵庫が効かない場合のクーラーボックス運用を記載",
+      "done": false
+    }
+  ],
+  "created": "2026-09-15T14:57:31Z",
+  "updated": "2026-09-15T14:57:31Z",
+  "closed": null,
+  "reviewed": null,
+  "body": "bodies/t-9e9y1.md",
+  "epic": "e-hp2zp",
+  "due": "2026-11-19T12:00:00Z"
+}

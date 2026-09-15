@@ -1,0 +1,42 @@
+{
+  "id": "t-43svn",
+  "title": "12:00 までに欠品分の買い出しを終えて厨房に戻る",
+  "status": "backlog",
+  "priority": 750,
+  "value": 3,
+  "effort": 2,
+  "labels": [
+    "d0-ops",
+    "recovery",
+    "shopping"
+  ],
+  "repos": [
+    "akira-toriyama/furrow-test"
+  ],
+  "deps": [
+    "t-257mq",
+    "t-3gwtn"
+  ],
+  "refs": [],
+  "checklist": [
+    {
+      "text": "欠品ゼロならその場で done にする",
+      "done": false
+    },
+    {
+      "text": "レシートを保管（wrap の精算用）",
+      "done": false
+    },
+    {
+      "text": "現金と交通系IC の残高を確認",
+      "done": false
+    }
+  ],
+  "created": "2026-09-15T14:57:32Z",
+  "updated": "2026-09-15T14:57:44Z",
+  "closed": null,
+  "reviewed": null,
+  "body": "bodies/t-43svn.md",
+  "epic": "e-hp2zp",
+  "due": "2026-11-21T03:00:00Z"
+}
