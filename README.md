@@ -27,4 +27,5 @@ measured here.
 ## Where findings go
 
 Gaps found while driving this board are filed against furrow itself on the
-private `akira-toriyama/projects` board, never as tasks here.
+private `akira-toriyama/projects` board, under epic `e-axjj`, never as tasks
+here. The first pass filed 21 of them.
