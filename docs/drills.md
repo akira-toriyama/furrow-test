@@ -20,7 +20,9 @@ furrow sync && furrow brief       # the session-start read, exactly as CLAUDE.md
 ```
 
 Record both values in the run log. A run on a different board commit or a
-different furrow is a new row, never a correction of an old one.
+different furrow is a new row, never a correction of an old one. When an
+operator drives the run, the operator syncs; the session then runs
+`furrow brief` alone and never `furrow sync`.
 
 ## Rules
 
@@ -33,9 +35,10 @@ different furrow is a new row, never a correction of an old one.
   deactivate|done|reopen|rm`, and `sync` after the setup read. No `git` writes
   either. A run that wrote anything is void: the board state has moved and
   the next run cannot be compared to it.
-- **No prose rules beyond this file.** The session gets the request, this
-  file's rules, and the board. Whatever it needs beyond `furrow --help`,
-  `furrow <cmd> --help`, and `furrow lint` is a hesitation by definition.
+- **No prose beyond what a real session would read.** The session gets the
+  request, this file's rules, the repo's `README.md` and `CLAUDE.md`, and
+  the board. Whatever it needs beyond those, `furrow --help`, `furrow <cmd>
+  --help`, and `furrow lint` is a hesitation by definition.
 - **Write down the commands you would have run**, in order, as a fenced
   block. A drill's deliverable is that plan plus the hesitation log; the
   plan is never executed.

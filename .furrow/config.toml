@@ -30,7 +30,7 @@ default_repo = "akira-toriyama/furrow-test"
 # Editing this list is how you rename or reorder statuses. A task whose status
 # is not in this list sorts last and is flagged by `furrow lint`.
 # "waiting" is the GTD Waiting-For lane (delegated / blocked on someone else).
-order = ["inbox", "backlog", "ready", "in-progress", "waiting", "done", "icebox"]
+order = ["inbox", "backlog", "in-progress", "ready", "waiting", "done", "icebox"]
 # Lane assigned by `furrow add` when --status is omitted.
 default = "inbox"
 # Lane `furrow done` moves a task into (and where Closed is stamped).
@@ -43,7 +43,7 @@ terminal = ["done", "icebox", "waiting"]
 # Lanes `furrow next` considers "ready to work" (besides the deps-done
 # check). Intake/planning lanes are excluded so next stays focused. Set to all
 # non-terminal lanes if you want next to show everything actionable.
-lanes = ["ready", "in-progress"]
+lanes = ["in-progress", "ready"]
 
 [priority]
 # Sparse integer step so reordering edits one field instead of renumbering.
@@ -107,6 +107,7 @@ older_than_days = 30
 # clamped away with a warning; a code naming no real check warns via `furrow lint`.
 # [lint.severity]
 # due-overdue = "warn"
+provenance_markers = ["完了条件:"]
 
 [due]
 # Lanes where a due date raises NOTHING — no lint finding, no `furrow brief`
