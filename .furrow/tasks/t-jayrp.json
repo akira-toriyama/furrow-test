@@ -1,0 +1,43 @@
+{
+  "id": "t-jayrp",
+  "title": "食器と調理器具を全部洗って会場の所定位置に戻す",
+  "status": "backlog",
+  "priority": 540,
+  "value": 4,
+  "effort": 4,
+  "labels": [
+    "cand-a",
+    "d0-night",
+    "dishes",
+    "teardown"
+  ],
+  "repos": [
+    "akira-toriyama/furrow-test"
+  ],
+  "deps": [
+    "t-8x2vs",
+    "t-z1fry"
+  ],
+  "refs": [],
+  "checklist": [
+    {
+      "text": "借用時の食器棚とコンロ周りを写真に撮る",
+      "done": false
+    },
+    {
+      "text": "食洗機の1巡時間を当日 15:40 までに実測する（[[t-70evb]] の空運転で計る）",
+      "done": false
+    },
+    {
+      "text": "割れ・欠けはその場で会場に連絡する",
+      "done": false
+    }
+  ],
+  "created": "2026-09-24T11:59:52Z",
+  "updated": "2026-09-24T11:59:52Z",
+  "closed": null,
+  "reviewed": null,
+  "body": "bodies/t-jayrp.md",
+  "epic": "e-f7w0h",
+  "due": "2026-11-21T12:40:00Z"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "t-3nc93",
+  "title": "候補 3 件に空き・料金・設備の問い合わせメールを送信する",
+  "status": "done",
+  "priority": 130,
+  "value": 5,
+  "effort": 2,
+  "labels": [
+    "external-wait",
+    "venue-selection"
+  ],
+  "repos": [
+    "akira-toriyama/furrow-test"
+  ],
+  "deps": [
+    "t-1swgk",
+    "t-k3rt9"
+  ],
+  "refs": [
+    "file:notes/venue-inquiry-template.md:1"
+  ],
+  "checklist": [
+    {
+      "text": "質問テンプレを 1 通にまとめる",
+      "done": false
+    },
+    {
+      "text": "A/B/C の 3 件に送信する",
+      "done": false
+    },
+    {
+      "text": "返信期限(9/22)を本文に明記する",
+      "done": false
+    },
+    {
+      "text": "送信済みを比較表に記録する",
+      "done": false
+    }
+  ],
+  "created": "2026-09-24T11:59:52Z",
+  "updated": "2026-09-24T11:59:52Z",
+  "closed": "2026-09-24T11:59:52Z",
+  "reviewed": null,
+  "body": "bodies/t-3nc93.md",
+  "epic": "e-0w7hf",
+  "due": "2026-09-14T14:59:59Z"
+}

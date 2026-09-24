@@ -1,0 +1,47 @@
+{
+  "id": "t-qwn6x",
+  "title": "5 品の試作会を実施してレシピを 15 人分で確定する",
+  "status": "backlog",
+  "priority": 250,
+  "value": 5,
+  "effort": 4,
+  "labels": [
+    "recipe",
+    "scaling",
+    "trial-cooking"
+  ],
+  "repos": [
+    "akira-toriyama/furrow-test"
+  ],
+  "deps": [
+    "t-0c54z",
+    "t-52bk3",
+    "t-mamd8"
+  ],
+  "refs": [],
+  "checklist": [
+    {
+      "text": "2 人分の試作材料を買う",
+      "done": false
+    },
+    {
+      "text": "工程ごとの実測時間をレシピシートに書く",
+      "done": false
+    },
+    {
+      "text": "塩分は計量して決める（目分量にしない）",
+      "done": false
+    },
+    {
+      "text": "5 品の盛り付け写真を撮る",
+      "done": false
+    }
+  ],
+  "created": "2026-09-24T11:59:52Z",
+  "updated": "2026-09-24T11:59:52Z",
+  "closed": null,
+  "reviewed": null,
+  "body": "bodies/t-qwn6x.md",
+  "epic": "e-13c7j",
+  "due": "2026-10-24T14:59:59Z"
+}

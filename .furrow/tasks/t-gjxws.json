@@ -1,0 +1,41 @@
+{
+  "id": "t-gjxws",
+  "title": "手伝い2名と振り返り会を開き詰まった工程を列挙する",
+  "status": "backlog",
+  "priority": 660,
+  "value": 4,
+  "effort": 2,
+  "labels": [
+    "retrospective"
+  ],
+  "repos": [
+    "akira-toriyama/furrow-test"
+  ],
+  "deps": [
+    "t-4cq1g",
+    "t-836kh",
+    "t-qfnd4"
+  ],
+  "refs": [],
+  "checklist": [
+    {
+      "text": "提供時刻の予定と実績の差を並べる",
+      "done": false
+    },
+    {
+      "text": "手伝い2名に「詰まった 3 件」を事前に書いてきてもらう",
+      "done": false
+    },
+    {
+      "text": "次回やらないと決めたことを明記する",
+      "done": false
+    }
+  ],
+  "created": "2026-09-24T11:59:52Z",
+  "updated": "2026-09-24T11:59:52Z",
+  "closed": null,
+  "reviewed": null,
+  "body": "bodies/t-gjxws.md",
+  "epic": "e-f7w0h",
+  "due": "2026-11-28T11:00:00Z"
+}

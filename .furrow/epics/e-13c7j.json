@@ -1,0 +1,25 @@
+{
+  "id": "e-13c7j",
+  "title": "前日までの仕込みを終える",
+  "goal": "当日仕上げ以外の仕込みが終わり、運搬手段と当日タイムテーブルが用意できている",
+  "active": false,
+  "labels": [
+    "event",
+    "prep"
+  ],
+  "repos": [
+    "akira-toriyama/furrow-test"
+  ],
+  "meta": {
+    "slug": "prep"
+  },
+  "created": "2026-09-24T11:59:52Z",
+  "updated": "2026-09-24T11:59:52Z",
+  "closed": null,
+  "body": "bodies/e-13c7j.md",
+  "deps": [
+    "e-z240d"
+  ],
+  "standing": false,
+  "pinned": false
+}

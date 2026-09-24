@@ -1,0 +1,52 @@
+{
+  "id": "t-aradr",
+  "title": "買い物リスト全品に単価見積りを入れて予算枠内に収める",
+  "status": "backlog",
+  "priority": 230,
+  "value": 5,
+  "effort": 2,
+  "labels": [
+    "budget",
+    "shopping-list"
+  ],
+  "repos": [
+    "akira-toriyama/furrow-test"
+  ],
+  "deps": [
+    "t-6bn1n",
+    "t-8nt5h",
+    "t-fjrkx",
+    "t-g92fz",
+    "t-n5n7w"
+  ],
+  "refs": [],
+  "checklist": [
+    {
+      "text": "全品目に想定単価と小計を入れる",
+      "done": false
+    },
+    {
+      "text": "系統別の合計を [[t-8nt5h]] の枠と突き合わせる",
+      "done": false
+    },
+    {
+      "text": "超過している系統を名指しする",
+      "done": false
+    },
+    {
+      "text": "超過分を削る品目を決めて反映する",
+      "done": false
+    },
+    {
+      "text": "1人あたりの割り勘額を算出する",
+      "done": false
+    }
+  ],
+  "created": "2026-09-24T11:59:52Z",
+  "updated": "2026-09-24T11:59:52Z",
+  "closed": null,
+  "reviewed": null,
+  "body": "bodies/t-aradr.md",
+  "epic": "e-z240d",
+  "due": "2026-11-11T14:59:59Z"
+}

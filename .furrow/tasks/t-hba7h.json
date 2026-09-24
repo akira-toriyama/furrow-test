@@ -1,0 +1,42 @@
+{
+  "id": "t-hba7h",
+  "title": "デザート台の生地を焼いて冷凍する",
+  "status": "backlog",
+  "priority": 350,
+  "value": 3,
+  "effort": 2,
+  "labels": [
+    "dessert",
+    "dough",
+    "freezing"
+  ],
+  "repos": [
+    "akira-toriyama/furrow-test"
+  ],
+  "deps": [
+    "t-5ntm2",
+    "t-gpy5r"
+  ],
+  "refs": [],
+  "checklist": [
+    {
+      "text": "予備を 2 人分多く焼く",
+      "done": false
+    },
+    {
+      "text": "粗熱を取ってから冷凍する",
+      "done": false
+    },
+    {
+      "text": "重ねずに平置きで凍らせる",
+      "done": false
+    }
+  ],
+  "created": "2026-09-24T11:59:52Z",
+  "updated": "2026-09-24T11:59:52Z",
+  "closed": null,
+  "reviewed": null,
+  "body": "bodies/t-hba7h.md",
+  "epic": "e-13c7j",
+  "due": "2026-11-15T14:59:59Z"
+}

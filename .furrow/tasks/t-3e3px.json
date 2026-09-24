@@ -1,0 +1,52 @@
+{
+  "id": "t-3e3px",
+  "title": "返信済み A/B 2 会場の設備インベントリ 9 項目を埋める",
+  "status": "in-progress",
+  "priority": 100,
+  "value": 5,
+  "effort": 3,
+  "labels": [
+    "cand-a",
+    "cand-b",
+    "inventory",
+    "venue-selection"
+  ],
+  "repos": [
+    "akira-toriyama/furrow-test"
+  ],
+  "deps": [
+    "t-3nc93"
+  ],
+  "refs": [
+    "file:notes/venue-compare.md:20"
+  ],
+  "checklist": [
+    {
+      "text": "A のコンロ口数と同時使用可否を記入",
+      "done": false
+    },
+    {
+      "text": "A のオーブン庫内サイズを天板実寸で記入",
+      "done": false
+    },
+    {
+      "text": "B のオーブン庫内サイズを電話で聞く",
+      "done": false
+    },
+    {
+      "text": "B の食器・カトラリー数を記入",
+      "done": false
+    },
+    {
+      "text": "冷蔵庫/冷凍庫の容量を両会場分記入",
+      "done": false
+    }
+  ],
+  "created": "2026-09-24T11:59:52Z",
+  "updated": "2026-09-24T11:59:52Z",
+  "closed": null,
+  "reviewed": null,
+  "body": "bodies/t-3e3px.md",
+  "epic": "e-0w7hf",
+  "due": "2026-09-27T14:59:59Z"
+}

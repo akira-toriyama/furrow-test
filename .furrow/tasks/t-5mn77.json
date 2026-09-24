@@ -1,0 +1,50 @@
+{
+  "id": "t-5mn77",
+  "title": "16:20 までに厨房を組み全機材の動作確認を終える",
+  "status": "backlog",
+  "priority": 730,
+  "value": 5,
+  "effort": 3,
+  "labels": [
+    "d0-ops",
+    "kitchen",
+    "setup"
+  ],
+  "repos": [
+    "akira-toriyama/furrow-test"
+  ],
+  "deps": [
+    "t-70evb",
+    "t-ca3ef"
+  ],
+  "refs": [],
+  "checklist": [
+    {
+      "text": "オーブンを200℃まで上げて温度計で実測",
+      "done": false
+    },
+    {
+      "text": "コンロ全口の点火確認",
+      "done": false
+    },
+    {
+      "text": "盛り付け台と洗い場を分離して動線を決める",
+      "done": false
+    },
+    {
+      "text": "ゴミ袋を会場規定の分別で設置",
+      "done": false
+    },
+    {
+      "text": "消火器と救急箱の位置を3人で確認",
+      "done": false
+    }
+  ],
+  "created": "2026-09-24T11:59:52Z",
+  "updated": "2026-09-24T11:59:52Z",
+  "closed": null,
+  "reviewed": null,
+  "body": "bodies/t-5mn77.md",
+  "epic": "e-vnkn7",
+  "due": "2026-11-21T07:20:00Z"
+}

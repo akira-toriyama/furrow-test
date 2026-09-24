@@ -1,0 +1,42 @@
+{
+  "id": "t-0c54z",
+  "title": "コース5品それぞれに候補を3案出して骨格表を1枚にまとめる",
+  "status": "ready",
+  "priority": 100,
+  "value": 4,
+  "effort": 2,
+  "labels": [
+    "draft",
+    "menu-design"
+  ],
+  "repos": [
+    "akira-toriyama/furrow-test"
+  ],
+  "deps": [],
+  "refs": [],
+  "checklist": [
+    {
+      "text": "前菜/スープ/魚/肉/デザートの5枠を立てる",
+      "done": false
+    },
+    {
+      "text": "各枠に3案（主材料と調理法）を書く",
+      "done": false
+    },
+    {
+      "text": "甲殻類を主材料にした案に印を付ける",
+      "done": false
+    },
+    {
+      "text": "オーブン必須・コンロ必須の別を各案に注記する",
+      "done": false
+    }
+  ],
+  "created": "2026-09-24T11:59:52Z",
+  "updated": "2026-09-24T11:59:52Z",
+  "closed": null,
+  "reviewed": null,
+  "body": "bodies/t-0c54z.md",
+  "epic": "e-z240d",
+  "due": "2026-09-30T14:59:59Z"
+}

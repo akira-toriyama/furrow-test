@@ -1,0 +1,25 @@
+{
+  "id": "e-z240d",
+  "title": "献立と調達計画を確定する",
+  "goal": "5 品の献立と数量・発注先・予算が確定し、買い物リストが出ている",
+  "active": false,
+  "labels": [
+    "event",
+    "menu"
+  ],
+  "repos": [
+    "akira-toriyama/furrow-test"
+  ],
+  "meta": {
+    "slug": "menu"
+  },
+  "created": "2026-09-24T11:59:52Z",
+  "updated": "2026-09-24T11:59:52Z",
+  "closed": null,
+  "body": "bodies/e-z240d.md",
+  "deps": [
+    "e-0w7hf"
+  ],
+  "standing": false,
+  "pinned": false
+}

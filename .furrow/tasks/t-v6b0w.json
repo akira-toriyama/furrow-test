@@ -1,0 +1,44 @@
+{
+  "id": "t-v6b0w",
+  "title": "甲殻類アレルギー申告者に重症度と同一器具・油の可否を直接確認する",
+  "status": "backlog",
+  "priority": 440,
+  "value": 5,
+  "effort": 1,
+  "labels": [
+    "dietary",
+    "risk"
+  ],
+  "repos": [
+    "akira-toriyama/furrow-test"
+  ],
+  "deps": [
+    "t-q2ke1"
+  ],
+  "refs": [],
+  "checklist": [
+    {
+      "text": "本人に電話または対面で聞く",
+      "done": false
+    },
+    {
+      "text": "重症度(接触/加熱蒸気/微量混入)を記録する",
+      "done": false
+    },
+    {
+      "text": "エピペン携行の有無を聞く",
+      "done": false
+    },
+    {
+      "text": "申告ゼロだった場合もその旨を申告表に書く",
+      "done": false
+    }
+  ],
+  "created": "2026-09-24T11:59:52Z",
+  "updated": "2026-09-24T11:59:52Z",
+  "closed": null,
+  "reviewed": null,
+  "body": "bodies/t-v6b0w.md",
+  "epic": "e-0w7hf",
+  "due": "2026-10-14T14:59:59Z"
+}

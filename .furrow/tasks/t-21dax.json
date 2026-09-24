@@ -1,0 +1,48 @@
+{
+  "id": "t-21dax",
+  "title": "15人前の1人前量を決めて食材ごとの総重量を算出する",
+  "status": "backlog",
+  "priority": 140,
+  "value": 4,
+  "effort": 2,
+  "labels": [
+    "procurement",
+    "scale"
+  ],
+  "repos": [
+    "akira-toriyama/furrow-test"
+  ],
+  "deps": [
+    "t-mamd8"
+  ],
+  "refs": [],
+  "checklist": [
+    {
+      "text": "1人前のグラム数を5品それぞれに決める",
+      "done": false
+    },
+    {
+      "text": "歩留まりの割増率を食材種別ごとに決める",
+      "done": false
+    },
+    {
+      "text": "肉と魚は骨・皮込みの発注重量に換算する",
+      "done": false
+    },
+    {
+      "text": "代替皿の分を別行で足す",
+      "done": false
+    },
+    {
+      "text": "総量が冷蔵庫容量（[[t-52bk3]]）に入るか突き合わせる",
+      "done": false
+    }
+  ],
+  "created": "2026-09-24T11:59:52Z",
+  "updated": "2026-09-24T11:59:52Z",
+  "closed": null,
+  "reviewed": null,
+  "body": "bodies/t-21dax.md",
+  "epic": "e-z240d",
+  "due": "2026-10-24T14:59:59Z"
+}
