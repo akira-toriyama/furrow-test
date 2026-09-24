@@ -27,4 +27,13 @@ which ones a fresh session actually needs). Every command's contract is
 - Bodies keep the template 目的 / 完了条件 / 前提 / 次の一手; the close
   appends 結果 last (`done --note`). lint warns `provenance-missing` when
   完了条件 is absent.
+- The event date lives in ONE place: `event_date` in the venue box's meta
+  (`furrow epic show 会場 --json | jq -r .meta.event_date`). Every `due`
+  and every D-N in a body is derived from it; a reschedule changes the
+  meta first, then the dues.
+- A venue candidate is a label, not a task: `cand-a` / `cand-b` / `cand-c`
+  marks the tasks whose plan is rewritten if that candidate drops out, so a
+  withdrawal is `furrow ls -l cand-b`. A task that merely names a
+  candidate carries no label; the comparison table itself is
+  `notes/venue-compare.md`.
 - Never hand-commit `.furrow/`: `furrow sync` publishes what furrow wrote.
