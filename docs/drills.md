@@ -105,7 +105,27 @@ does not carry. Undercounting is the failure mode; when unsure, record it.
 | 2026-09-15 | a7ff857 | dev (post-v6.0.0) | reschedule | no | — | — |
 | 2026-09-15 | a7ff857 | dev (post-v6.0.0) | invalidate | no | — | — |
 | 2026-09-15 | a7ff857 | dev (post-v6.0.0) | **total** | 0 / 4 | 43 | 2 |
+| 2026-09-24 | ce5f326 | dev (main at 958716b) | orient | no | 18 | 2 |
+| 2026-09-24 | ce5f326 | dev (main at 958716b) | unblock | no | 21 | 2 |
+| 2026-09-24 | ce5f326 | dev (main at 958716b) | reschedule | no | 17 | 0 |
+| 2026-09-24 | ce5f326 | dev (main at 958716b) | invalidate | no | 19 | 1 |
+| 2026-09-24 | ce5f326 | dev (main at 958716b) | **total** | 0 / 4 | 75 | 5 |
 
 The 2026-09-15 run predates this file: its four logs were not kept, only
 the totals, and the 21 gaps it filed are the first members of `e-axjj`.
-Every later run keeps its logs under `docs/drills/runs/`.
+Every later run keeps its logs under `docs/drills/runs/`. Counts are
+comparable only within one protocol — the 2026-09-24 run is the first
+under this file, and its 75 is the baseline later runs are read against.
+
+The board state a run measured is the `.furrow/` tree at the commit in the
+`board` column; no tag is kept, the hash is the reference. A run on a
+board whose `.furrow/` tree differs from the previous row's is a new
+baseline, not a delta.
+
+What the 2026-09-24 run says, in one line per drill (the logs carry the
+rows): every drill stopped on the bodies' private id namespace
+(`venue-NN`, `menu-NN` — unresolvable by furrow and inconsistent between
+bodies) and on `refs` naming files that do not exist in the repo; unblock
+and invalidate found dep edges that contradict the prose; reschedule found
+that the event date exists nowhere but in 95 `due` stamps. Those are
+defects of this board's content, and fixing them is the next measurement.
