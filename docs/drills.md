@@ -113,6 +113,11 @@ does not carry. Undercounting is the failure mode; when unsure, record it.
 | 2026-09-24 | ce5f326 | dev (main at 958716b) | reschedule | no | 17 | 0 |
 | 2026-09-24 | ce5f326 | dev (main at 958716b) | invalidate | no | 19 | 1 |
 | 2026-09-24 | ce5f326 | dev (main at 958716b) | **total** | 0 / 4 | 75 | 5 |
+| 2026-09-24 (2) | 49d666c | dev (main at a1c5915) | orient | no | 20 | 2 |
+| 2026-09-24 (2) | 49d666c | dev (main at a1c5915) | unblock | no | 23 | 1 |
+| 2026-09-24 (2) | 49d666c | dev (main at a1c5915) | reschedule | no | 24 | 1 |
+| 2026-09-24 (2) | 49d666c | dev (main at a1c5915) | invalidate | no | 22 | 1 |
+| 2026-09-24 (2) | 49d666c | dev (main at a1c5915) | **total** | 0 / 4 | 89 | 5 |
 
 The 2026-09-15 run predates this file: its four logs were not kept, only
 the totals, and the 21 gaps it filed are the first members of `e-axjj`.
@@ -132,3 +137,13 @@ bodies) and on `refs` naming files that do not exist in the repo; unblock
 and invalidate found dep edges that contradict the prose; reschedule found
 that the event date exists nowhere but in 95 `due` stamps. Those are
 defects of this board's content, and fixing them is the next measurement.
+
+The second run measured the config change (`provenance_markers`,
+in-progress ahead of ready) plus a nine-line CLAUDE.md, with seven furrow
+fixes merged in between (#401–#407), on the same content. It did not go
+down: 89, with the same content defects in every top-three and two of the
+new prose rules contradicting each other (pick-order vs one-in-flight;
+retire-by-note vs retitle-on-count) — both reworded after the run. Read
+the two runs as one lesson: prose and lint settings do not compensate for
+a board whose bodies, refs, and edges disagree with each other. The
+content fix comes first; the drills are re-run after it.
