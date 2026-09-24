@@ -118,6 +118,11 @@ does not carry. Undercounting is the failure mode; when unsure, record it.
 | 2026-09-24 (2) | 49d666c | dev (main at a1c5915) | reschedule | no | 24 | 1 |
 | 2026-09-24 (2) | 49d666c | dev (main at a1c5915) | invalidate | no | 22 | 1 |
 | 2026-09-24 (2) | 49d666c | dev (main at a1c5915) | **total** | 0 / 4 | 89 | 5 |
+| 2026-09-24 (3) | f497db3 | dev (main at ac777e8) | orient | no | 20 | 2 |
+| 2026-09-24 (3) | f497db3 | dev (main at ac777e8) | unblock | no | 23 | 2 |
+| 2026-09-24 (3) | f497db3 | dev (main at ac777e8) | reschedule | no | 22 | 1 |
+| 2026-09-24 (3) | f497db3 | dev (main at ac777e8) | invalidate | no | 24 | 1 |
+| 2026-09-24 (3) | f497db3 | dev (main at ac777e8) | **total** | 0 / 4 | 89 | 6 |
 
 The 2026-09-15 run predates this file: its four logs were not kept, only
 the totals, and the 21 gaps it filed are the first members of `e-axjj`.
@@ -137,6 +142,30 @@ bodies) and on `refs` naming files that do not exist in the repo; unblock
 and invalidate found dep edges that contradict the prose; reschedule found
 that the event date exists nowhere but in 95 `due` stamps. Those are
 defects of this board's content, and fixing them is the next measurement.
+
+The third run is a new baseline, not a delta: the board was regenerated
+from `seed/` with its content fixed (every cross-reference a `[[id]]`
+link, every `refs` target present under `notes/`, dep edges that match
+the prose, `event_date` once in the venue box's meta, `cand-a/b/c` on the
+tasks a withdrawal rewrites), so no id survived from the previous rows.
+The total did not move (89), but what stopped the sessions did. Not one
+of the four top-threes names the private id namespace, a missing file, a
+contradictory edge, or the event date any more; the rows those occupied
+went to three new classes. First, the artifacts themselves: `notes/`
+named tasks by the seed's keys (`venue-quote-c`), which furrow never
+sees, and held the finished deliverable of a task still open at 0/5 —
+both defects of the regeneration, fixed in the commit after this run.
+Second, furrow: a relative due shift (the reschedule is 78 hand-typed
+stamps), a reason on a dep edge, a due that is externally fixed and must
+not move with the event, `search` not reaching epic meta, a negated
+label filter the session did not find in `ls --help` (it exists: `-q
+-label:cand-a`). Third, the rules: who applies a knockout criterion when
+a reply lands, how a partially answered inquiry is recorded, whether a
+task whose deliverable already exists in `notes/` is closable as-is. Read
+the flat total as the protocol's floor rather than the board's score: a
+session told that undercounting is the failure mode records about twenty
+stops whatever the board, and the useful signal is which rows appear at
+the top, not how many rows there are.
 
 The second run measured the config change (`provenance_markers`,
 in-progress ahead of ready) plus a nine-line CLAUDE.md, with seven furrow
