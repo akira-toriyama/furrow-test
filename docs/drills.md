@@ -105,7 +105,10 @@ with these sections in this order:
    (one sentence). `lint catches it?` is `yes: <code>` only if `furrow lint`
    on this board actually reports it — run it and check; otherwise `no`.
 4. **Verdict** — `could_act_confidently: true|false`, one sentence why, the
-   hesitation count, and how many rows said `yes` in the last column.
+   hesitation count, and how many rows said `yes` in the last column. Then
+   a line `Most consequential:` naming the three rows that mattered most,
+   in order, one clause each — the results table's reading is built on
+   these, not on the count.
 
 A hesitation is any point where you stopped to guess, to re-read, to run an
 extra command you had not planned, or to look for information the board
@@ -140,6 +143,11 @@ does not carry. Undercounting is the failure mode; when unsure, record it.
 | 2026-09-24 (4) | 1429073 | dev (main at ac777e8) | reschedule | no | 24 | 2 |
 | 2026-09-24 (4) | 1429073 | dev (main at ac777e8) | invalidate | no | 25 | 1 |
 | 2026-09-24 (4) | 1429073 | dev (main at ac777e8) | **total** | 1 / 4 | 90 | 5 |
+| 2026-09-25 (5) | 9896fee | dev (main at eb85970) | orient | **yes** | 19 | 1 |
+| 2026-09-25 (5) | 9896fee | dev (main at eb85970) | unblock | **yes** | 29 | 3 |
+| 2026-09-25 (5) | 9896fee | dev (main at eb85970) | reschedule | no | 28 | 2 |
+| 2026-09-25 (5) | 9896fee | dev (main at eb85970) | invalidate | **yes** | 25 | 2 |
+| 2026-09-25 (5) | 9896fee | dev (main at eb85970) | **total** | 3 / 4 | 101 | 8 |
 
 The 2026-09-15 run predates this file: its four logs were not kept, only
 the totals, and the 21 gaps it filed are the first members of `e-axjj`.
@@ -232,6 +240,60 @@ run justifies. A done task with an untouched checklist: all four done tasks
 here are 0/N, 0 of the board's 372 rows are ticked, and two drills stopped
 on it — that stays a content fix and no lint, by the earlier decision that a
 close settles the task, not its checklist.
+
+The fifth run is the first delta measured after a rule fix rather than a
+content fix, and it sits on a rebuilt `.furrow/` tree: the seed was
+regenerated (`0b52fa7`, so no id survives from the fourth run's rows),
+CLAUDE.md grew from 39 to 77 lines with the eight rule holes the third and
+fourth runs both hit folded into its ten existing bullets, the C cutoff
+became a condition ("only while two candidates remain"), the four done
+tasks' rows were ticked (17 of the board's 372, from 0), each copy under
+`notes/` now says which of its lines its source lacks, and furrow moved from
+ac777e8 to eb85970 (`add --batch` seeding a ticked row, so a rebuild keeps
+the ticks). The flat total rose from 90 to 101 while the confident count
+went from 1 of 4 to 3 of 4; read the two together, as the third run's
+paragraph asks — a session told that undercounting is the failure mode
+records every re-read, and three of the four now record theirs on the way
+to a plan they stand behind. Not one top-three row in the four logs names
+one of the eight holes as a rule the board lacks. Six of the twelve name a
+question the new lines' own wording opened: which of two tier-one tasks
+wins (due age says one, `priority` the other); whether a withdrawal for the
+other side's reasons takes the knockout path, and whether the "only while
+two remain" guard gates a knockout drop or only the timeout; the
+partial-answer rule and the drop rule giving opposite orders for the
+dropped member's rows; whether a status cell inside a done task's note is a
+rewrite or an update; and whether furrow or the session promotes the
+dependent a close frees. Those are the next CLAUDE.md lines, and they are
+questions of degree inside a rule that is now there, not the absence of
+one. The three content fixes held: the conditional cutoff read correctly on
+the day B withdrew — invalidate saw it flip from allowed to forbidden and
+said so, then noted that the task carrying the clause has no `cand-b`
+label, so the "`ls -l cand-b` comes back empty" check passes with that
+change unmade; no drill stopped on whether ticks mean anything; the dietary
+copy stopped orient once more, now on the criterion for adopting its two
+extra questions rather than on which side is the source. The protocol's
+own cost fell from eight rows to none — the log shape, the `.furrow/`
+access rule and the `notes/` scope were all in the request — and four rows
+are the sessions' own (a mistyped flag, a pipe that interleaved stderr into
+`lint --json`, the lint vocabulary, `git log` for a commit style).
+reschedule alone stays `false`, on the same three furrow gaps as every run
+before it: no shift-by-N primitive (77 hand-typed writes, the fifth time),
+nothing that marks a due as promised to a third party or pinned to a
+holiday, and a done task whose title and result name the old date and may
+not be edited — lines in CLAUDE.md cannot close these, the filed tasks can.
+One row was checked and refuted: invalidate reported `furrow search 'B
+会場'` finding nothing where `grep` found nine bodies; `grep -l 'B 会場'`
+over `.furrow/bodies` finds nothing either (the nine came from a looser
+pattern), so no search defect is filed. Two furrow gaps recur enough to
+file: `show` prints checklist rows without their index, so every session
+counts rows by hand before `check <i>` (two drills here, one in the fourth
+run), and `brief`'s `1 hidden by -n` note names a lane but not the id,
+which three of the four drills re-ran `next` uncapped to learn (the hidden
+row was the recurring chase every time). `attach` refusing a PDF stopped
+unblock for the third run in a row and is filed beside them; `revisit`'s
+per-dep `dep_done` (four runs), the relative due shift (five), and the
+missing chase interval behind a `waiting` due (two drills) go as notes onto
+the tasks that already carry them.
 
 The second run measured the config change (`provenance_markers`,
 in-progress ahead of ready) plus a nine-line CLAUDE.md, with seven furrow
