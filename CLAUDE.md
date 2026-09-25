@@ -59,9 +59,9 @@ which ones a fresh session actually needs). Every command's contract is
   changes the meta first, then the dues.
 - A venue candidate is a label, not a task: `cand-a` / `cand-b` / `cand-c`
   marks the tasks whose plan is rewritten if that candidate drops out, so a
-  withdrawal is `furrow ls -l cand-b`. A task that merely names a
-  candidate carries no label; the comparison table itself is
-  `notes/venue-compare.md`. A candidate that fails a knockout condition (the
+  withdrawal — and a reply, which touches the same tasks — is
+  `furrow ls -l cand-b`. A task that merely names a candidate carries no
+  label; the comparison table itself is `notes/venue-compare.md`. A candidate that fails a knockout condition (the
   decision task's 前提) drops the moment the failing answer lands, and the
   session filing the answer executes the drop; the decision task only
   records why. A drop rewrites every `ls -l cand-x` task in place — retitle,
