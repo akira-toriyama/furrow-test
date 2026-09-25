@@ -153,6 +153,11 @@ does not carry. Undercounting is the failure mode; when unsure, record it.
 | 2026-09-25 (6) | 1fca1cb | dev (main at eb85970) | reschedule | **yes** | 23 | 3 |
 | 2026-09-25 (6) | 1fca1cb | dev (main at eb85970) | invalidate | **yes** | 29 | 2 |
 | 2026-09-25 (6) | 1fca1cb | dev (main at eb85970) | **total** | 4 / 4 | 99 | 7 |
+| 2026-09-25 (7) | 6154cea | dev (main at eb85970) | orient | **yes** | 19 | 1 |
+| 2026-09-25 (7) | 6154cea | dev (main at eb85970) | unblock | **yes** | 25 | 1 |
+| 2026-09-25 (7) | 6154cea | dev (main at eb85970) | reschedule | **yes** | 30 | 0 |
+| 2026-09-25 (7) | 6154cea | dev (main at eb85970) | invalidate | **yes** | 24 | 1 |
+| 2026-09-25 (7) | 6154cea | dev (main at eb85970) | **total** | 4 / 4 | 98 | 3 |
 
 The 2026-09-15 run predates this file: its four logs were not kept, only
 the totals, and the 21 gaps it filed are the first members of `e-axjj`.
@@ -349,6 +354,58 @@ right — 29 tasks share an instant with another today, and one open
 dependency pair already does — so the zero-slack day stays a content note,
 not a lint. reschedule's top row is the shift primitive for the sixth run
 in a row; nothing on this board's side can remove it.
+
+The seventh run measures the rulebook's shape. CLAUDE.md was regrouped by
+the situation a session is in — the pick, one task in flight, deps and
+promotion, the body and its rows, a done task, `waiting` and a reply, a
+candidate dropping out, the event date moving, `notes/` — one decision per
+bullet (125 lines in ten bullets became 165 in thirty-seven under nine
+headings; 44 of the previous file's 46 sentences survive verbatim, the two
+others changed only a cross-reference, and one sentence is new: a ticked
+row is history). The seed took the sixth run's content items (the
+receiver's five questions numbered, the eight allergens named in the row,
+the religious/ethical question folded into Q3, the cooking floor re-derived
+from the survivors, 12 guests reconciled with 15 rows); the board was
+rebuilt (`6154cea`), furrow unchanged. 99 became 98, all four stayed
+`true`, and the class the shape was meant to shrink — rows whose remedy
+column says the rule was already there — went from 19 to 16 by the
+remedy-column pattern (the sixth run's paragraph counted 15 with a
+whole-row pattern; by the column pattern the fifth run is 8, the sixth 19,
+the seventh 16). Read that as a modest gain: a session under a request
+still re-reads, and the re-reads now land on a heading instead of inside a
+twenty-line bullet. Of the sixth run's twelve top-three rows, the four the
+seed answered are gone (the slash string, the fold, the same-session
+start-and-close, the column-shaped tables), and the furrow ones stayed:
+`show` prints no checklist index (three drills again), `dep --list` does
+not say a close frees the dependent, the shift primitive (the seventh run
+in a row, 87 writes this time), `revisit` without its reason column. What
+is new is the cost of the lines the sixth run added: "a redo task's due is
+the replaced task's D-N re-derived" outputs a date already past for both
+redo tasks (reschedule's top row), "one task per counterparty, not per
+candidate" separates nothing when every candidate is a counterparty, the
+C chase task's `cand-a`/`cand-b` read as a mislabel until the body explains
+that the label also marks a clause counting the survivors, and a reschedule
+that pushes a derived due past a `固定` one creates an inversion the board
+says nothing about. Three-run items surfaced too: the knockout conditions
+live on the decision task and the filer reads them first; a candidate is a
+label and never an edge, so the request's "dependencies that ran through
+it" has no members — three invalidate sessions in a row read every edge to
+prove it; `ls -l cand-x` finds the rewrite set but not the tasks whose
+前提 merely names the candidate, which only `grep` finds because a
+one-letter name is not searchable. Those and the two-run items (a done
+task's due is history in the reschedule rule too; the reason's two homes —
+the decision task among tasks, the 状態 cell among notes; the `運用` line
+applies to every note with a candidate column; the note precedes the park;
+a drop never moves a due) are folded in by the commit after this run and
+wait for an eighth. Measured this run: `attach --help` reads "image or
+video … other media link", which one session took as accepting a PDF and
+three earlier ones as refusing it — the help is ambiguous, and the task
+filed for it says so now. Where the drills stand after seven: every
+request is `true`, every top-three row is either a furrow gap already
+filed or a sentence one run old, and the flat total has sat between 89 and
+101 since the third run whatever the board did — the protocol's floor. The
+next measurement worth taking is not an eighth run on this board but the
+furrow changes the runs kept naming; the board is ready for it.
 
 The second run measured the config change (`provenance_markers`,
 in-progress ahead of ready) plus a nine-line CLAUDE.md, with seven furrow
