@@ -1,0 +1,42 @@
+{
+  "id": "t-fbnw2",
+  "title": "甲殻類抜きの差し替え皿を 2 品決めて工程表に載せる",
+  "status": "backlog",
+  "priority": 260,
+  "value": 4,
+  "effort": 2,
+  "labels": [
+    "allergy",
+    "menu-variant",
+    "planning"
+  ],
+  "repos": [
+    "akira-toriyama/furrow-test"
+  ],
+  "deps": [
+    "t-060wj",
+    "t-j4ykr"
+  ],
+  "refs": [],
+  "checklist": [
+    {
+      "text": "差し替え 1 人分のまな板・器具の分離方法を決める",
+      "done": false
+    },
+    {
+      "text": "XO 醤・魚醤など甲殻類を含む調味料の有無を確認する",
+      "done": false
+    },
+    {
+      "text": "差し替え分の追加食材を [[t-gczt2]] の調達リストに足す",
+      "done": false
+    }
+  ],
+  "created": "2026-09-25T08:42:18Z",
+  "updated": "2026-09-25T08:42:18Z",
+  "closed": null,
+  "reviewed": null,
+  "body": "bodies/t-fbnw2.md",
+  "epic": "e-30t1m",
+  "due": "2026-11-01T14:59:59Z"
+}

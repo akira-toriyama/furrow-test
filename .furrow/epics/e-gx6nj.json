@@ -1,0 +1,26 @@
+{
+  "id": "e-gx6nj",
+  "title": "当日オペレーションを回す",
+  "goal": "17:30 着席から 21:00 解散までを事故なく回し切る",
+  "active": false,
+  "labels": [
+    "dayof",
+    "event"
+  ],
+  "repos": [
+    "akira-toriyama/furrow-test"
+  ],
+  "meta": {
+    "slug": "dayof"
+  },
+  "created": "2026-09-25T08:42:18Z",
+  "updated": "2026-09-25T08:42:18Z",
+  "closed": null,
+  "body": "bodies/e-gx6nj.md",
+  "deps": [
+    "e-1rxdr",
+    "e-30t1m"
+  ],
+  "standing": false,
+  "pinned": false
+}

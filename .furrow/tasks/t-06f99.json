@@ -1,0 +1,51 @@
+{
+  "id": "t-06f99",
+  "title": "仕込み品にラベルを貼り搬入順に積載する",
+  "status": "backlog",
+  "priority": 420,
+  "value": 5,
+  "effort": 3,
+  "labels": [
+    "labeling",
+    "logistics",
+    "packing"
+  ],
+  "repos": [
+    "akira-toriyama/furrow-test"
+  ],
+  "deps": [
+    "t-3yhzh",
+    "t-7ds3p",
+    "t-9hwy2",
+    "t-g61ts",
+    "t-j9rv9",
+    "t-sf3ad",
+    "t-tz0ey"
+  ],
+  "refs": [],
+  "checklist": [
+    {
+      "text": "ラベルの記載 4 項目（品名/仕込み日/保存方法/皿番号）をそろえる",
+      "done": false
+    },
+    {
+      "text": "箱ごとに中身リストを外側に貼る",
+      "done": false
+    },
+    {
+      "text": "保冷剤が凍っているか確認する",
+      "done": false
+    },
+    {
+      "text": "当日朝にクーラーボックスへ移す品を一覧にする",
+      "done": false
+    }
+  ],
+  "created": "2026-09-25T08:42:18Z",
+  "updated": "2026-09-25T08:42:18Z",
+  "closed": null,
+  "reviewed": null,
+  "body": "bodies/t-06f99.md",
+  "epic": "e-30t1m",
+  "due": "2026-11-20T13:00:00Z"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "t-8rbd6",
+  "title": "16:40 にデザートを仕上げて冷蔵保管に入れる",
+  "status": "backlog",
+  "priority": 770,
+  "value": 4,
+  "effort": 3,
+  "labels": [
+    "cooking",
+    "d0-ops",
+    "dessert"
+  ],
+  "repos": [
+    "akira-toriyama/furrow-test"
+  ],
+  "deps": [
+    "t-gfjgk",
+    "t-yedxj"
+  ],
+  "refs": [],
+  "checklist": [
+    {
+      "text": "盛り付け皿を先に冷やしておく",
+      "done": false
+    },
+    {
+      "text": "冷蔵庫の占有スペースをドリンクと奪い合わない配置にする",
+      "done": false
+    },
+    {
+      "text": "アレルギー対応が要る場合は別トレーで分離",
+      "done": false
+    }
+  ],
+  "created": "2026-09-25T08:42:18Z",
+  "updated": "2026-09-25T08:42:18Z",
+  "closed": null,
+  "reviewed": null,
+  "body": "bodies/t-8rbd6.md",
+  "epic": "e-gx6nj",
+  "due": "2026-11-21T07:40:00Z"
+}

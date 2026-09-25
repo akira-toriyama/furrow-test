@@ -1,0 +1,35 @@
+{
+  "id": "t-re2cv",
+  "title": "BGM プレイリストを作り当日 17:00 から流す",
+  "status": "icebox",
+  "priority": 160,
+  "value": 2,
+  "effort": 1,
+  "labels": [
+    "ambience",
+    "nice-to-have"
+  ],
+  "repos": [
+    "akira-toriyama/furrow-test"
+  ],
+  "deps": [
+    "t-ec04m"
+  ],
+  "refs": [],
+  "checklist": [
+    {
+      "text": "会場のスピーカー有無を確認",
+      "done": false
+    },
+    {
+      "text": "Bluetooth スピーカーを持参するか決める",
+      "done": false
+    }
+  ],
+  "created": "2026-09-25T08:42:18Z",
+  "updated": "2026-09-25T08:42:18Z",
+  "closed": null,
+  "reviewed": null,
+  "body": "bodies/t-re2cv.md",
+  "epic": "e-gx6nj"
+}

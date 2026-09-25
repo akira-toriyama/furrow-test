@@ -1,0 +1,25 @@
+{
+  "id": "e-30t1m",
+  "title": "前日までの仕込みを終える",
+  "goal": "当日仕上げ以外の仕込みが終わり、運搬手段と当日タイムテーブルが用意できている",
+  "active": false,
+  "labels": [
+    "event",
+    "prep"
+  ],
+  "repos": [
+    "akira-toriyama/furrow-test"
+  ],
+  "meta": {
+    "slug": "prep"
+  },
+  "created": "2026-09-25T08:42:18Z",
+  "updated": "2026-09-25T08:42:18Z",
+  "closed": null,
+  "body": "bodies/e-30t1m.md",
+  "deps": [
+    "e-7d5r4"
+  ],
+  "standing": false,
+  "pinned": false
+}

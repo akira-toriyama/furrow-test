@@ -1,0 +1,41 @@
+{
+  "id": "t-j9rv9",
+  "title": "不足器具を借用・購入して手元に揃える",
+  "status": "backlog",
+  "priority": 330,
+  "value": 3,
+  "effort": 2,
+  "labels": [
+    "equipment",
+    "procurement",
+    "waiting-inline"
+  ],
+  "repos": [
+    "akira-toriyama/furrow-test"
+  ],
+  "deps": [
+    "t-q6ba3"
+  ],
+  "refs": [],
+  "checklist": [
+    {
+      "text": "借用品に持ち主名のテープを貼る",
+      "done": false
+    },
+    {
+      "text": "購入分の金額を body に追記する",
+      "done": false
+    },
+    {
+      "text": "自宅で一度出してサイズと動作を確認する",
+      "done": false
+    }
+  ],
+  "created": "2026-09-25T08:42:18Z",
+  "updated": "2026-09-25T08:42:18Z",
+  "closed": null,
+  "reviewed": null,
+  "body": "bodies/t-j9rv9.md",
+  "epic": "e-30t1m",
+  "due": "2026-11-14T14:59:59Z"
+}

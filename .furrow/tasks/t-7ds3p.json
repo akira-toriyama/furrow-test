@@ -1,0 +1,41 @@
+{
+  "id": "t-7ds3p",
+  "title": "ソース 3 種を仕込んで冷蔵保存する",
+  "status": "backlog",
+  "priority": 360,
+  "value": 4,
+  "effort": 3,
+  "labels": [
+    "batch-cook",
+    "refrigerated",
+    "sauce"
+  ],
+  "repos": [
+    "akira-toriyama/furrow-test"
+  ],
+  "deps": [
+    "t-g61ts"
+  ],
+  "refs": [],
+  "checklist": [
+    {
+      "text": "塩は当日調整ぶんを残して薄めに止める",
+      "done": false
+    },
+    {
+      "text": "容器に品名と仕込み日を書く",
+      "done": false
+    },
+    {
+      "text": "乳化系は分離していないか翌日確認する",
+      "done": false
+    }
+  ],
+  "created": "2026-09-25T08:42:18Z",
+  "updated": "2026-09-25T08:42:18Z",
+  "closed": null,
+  "reviewed": null,
+  "body": "bodies/t-7ds3p.md",
+  "epic": "e-30t1m",
+  "due": "2026-11-18T14:59:59Z"
+}

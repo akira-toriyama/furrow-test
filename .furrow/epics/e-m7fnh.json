@@ -1,0 +1,25 @@
+{
+  "id": "e-m7fnh",
+  "title": "撤収・精算・振り返りを終える",
+  "goal": "22:00 撤収完了、精算と返金確認が済み、振り返りが board に残っている",
+  "active": false,
+  "labels": [
+    "event",
+    "wrap"
+  ],
+  "repos": [
+    "akira-toriyama/furrow-test"
+  ],
+  "meta": {
+    "slug": "wrap"
+  },
+  "created": "2026-09-25T08:42:18Z",
+  "updated": "2026-09-25T08:42:18Z",
+  "closed": null,
+  "body": "bodies/e-m7fnh.md",
+  "deps": [
+    "e-gx6nj"
+  ],
+  "standing": false,
+  "pinned": false
+}

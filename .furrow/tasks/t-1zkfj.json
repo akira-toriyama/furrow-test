@@ -1,0 +1,38 @@
+{
+  "id": "t-1zkfj",
+  "title": "次回開催の要否を判定して日程候補を3つ確定する",
+  "status": "icebox",
+  "priority": 140,
+  "value": 2,
+  "effort": 1,
+  "labels": [
+    "next-time",
+    "recurring"
+  ],
+  "repos": [
+    "akira-toriyama/furrow-test"
+  ],
+  "deps": [
+    "t-h2fxs"
+  ],
+  "refs": [],
+  "checklist": [
+    {
+      "text": "やる/やらないを言い切る",
+      "done": false
+    },
+    {
+      "text": "やるなら候補日を3つ書く",
+      "done": false
+    }
+  ],
+  "created": "2026-09-25T08:42:18Z",
+  "updated": "2026-09-25T08:42:18Z",
+  "closed": null,
+  "reviewed": null,
+  "body": "bodies/t-1zkfj.md",
+  "epic": "e-m7fnh",
+  "due": "2027-05-20T14:59:59Z",
+  "repeat": "FREQ=MONTHLY;INTERVAL=6",
+  "repeat_anchor": "2027-05-20T14:59:59Z"
+}

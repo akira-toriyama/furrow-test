@@ -1,0 +1,35 @@
+{
+  "id": "t-cbdqp",
+  "title": "調理風景のタイムラプス動画を撮る",
+  "status": "icebox",
+  "priority": 170,
+  "value": 1,
+  "effort": 2,
+  "labels": [
+    "nice-to-have",
+    "photo"
+  ],
+  "repos": [
+    "akira-toriyama/furrow-test"
+  ],
+  "deps": [
+    "t-csn8h"
+  ],
+  "refs": [],
+  "checklist": [
+    {
+      "text": "三脚かスマホスタンドの要否を確認",
+      "done": false
+    },
+    {
+      "text": "厨房の電源とスマホの充電を確保",
+      "done": false
+    }
+  ],
+  "created": "2026-09-25T08:42:18Z",
+  "updated": "2026-09-25T08:42:18Z",
+  "closed": null,
+  "reviewed": null,
+  "body": "bodies/t-cbdqp.md",
+  "epic": "e-gx6nj"
+}

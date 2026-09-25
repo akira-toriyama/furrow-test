@@ -1,0 +1,47 @@
+{
+  "id": "t-pf9z8",
+  "title": "19:00 に肉の火入れを開始し 19:30 に12皿を提供する",
+  "status": "backlog",
+  "priority": 820,
+  "value": 5,
+  "effort": 4,
+  "labels": [
+    "cooking",
+    "main-dish",
+    "timeline"
+  ],
+  "repos": [
+    "akira-toriyama/furrow-test"
+  ],
+  "deps": [
+    "t-msexg",
+    "t-sxmp1",
+    "t-yedxj"
+  ],
+  "refs": [],
+  "checklist": [
+    {
+      "text": "18:30 にオーブン予熱を開始",
+      "done": false
+    },
+    {
+      "text": "芯温計で仕上がりを確認",
+      "done": false
+    },
+    {
+      "text": "休ませている間に付け合わせと皿を温める",
+      "done": false
+    },
+    {
+      "text": "12皿を2人で同時に運ぶ合図を決める",
+      "done": false
+    }
+  ],
+  "created": "2026-09-25T08:42:18Z",
+  "updated": "2026-09-25T08:42:18Z",
+  "closed": null,
+  "reviewed": null,
+  "body": "bodies/t-pf9z8.md",
+  "epic": "e-gx6nj",
+  "due": "2026-11-21T10:30:00Z"
+}

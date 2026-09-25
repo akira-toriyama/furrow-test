@@ -1,0 +1,48 @@
+{
+  "id": "t-9hwy2",
+  "title": "当日火入れする肉の下処理を終えて冷蔵する",
+  "status": "backlog",
+  "priority": 400,
+  "value": 5,
+  "effort": 3,
+  "labels": [
+    "day-of-finish",
+    "meat",
+    "prep-only"
+  ],
+  "repos": [
+    "akira-toriyama/furrow-test"
+  ],
+  "deps": [
+    "t-jvn40",
+    "t-zbgbr"
+  ],
+  "refs": [
+    "https://www.mhlw.go.jp/topics/syokuchu/kateide.html"
+  ],
+  "checklist": [
+    {
+      "text": "筋と余分な脂を落とす",
+      "done": false
+    },
+    {
+      "text": "真空袋に品名と塩当て時刻を書く",
+      "done": false
+    },
+    {
+      "text": "常温に戻す時刻をタイムテーブルに書く",
+      "done": false
+    },
+    {
+      "text": "芯温計とタイマーを同じ箱に入れる",
+      "done": false
+    }
+  ],
+  "created": "2026-09-25T08:42:18Z",
+  "updated": "2026-09-25T08:42:18Z",
+  "closed": null,
+  "reviewed": null,
+  "body": "bodies/t-9hwy2.md",
+  "epic": "e-30t1m",
+  "due": "2026-11-20T06:00:00Z"
+}

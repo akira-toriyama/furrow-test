@@ -1,0 +1,42 @@
+{
+  "id": "t-3yhzh",
+  "title": "前菜のマリネを漬け込んで冷蔵する",
+  "status": "backlog",
+  "priority": 380,
+  "value": 3,
+  "effort": 2,
+  "labels": [
+    "appetizer",
+    "marinade",
+    "refrigerated"
+  ],
+  "repos": [
+    "akira-toriyama/furrow-test"
+  ],
+  "deps": [
+    "t-gfjgk",
+    "t-nz6ts"
+  ],
+  "refs": [],
+  "checklist": [
+    {
+      "text": "前日までに冷蔵解凍が済んでいるか確認する",
+      "done": false
+    },
+    {
+      "text": "容器に漬け開始時刻を書く",
+      "done": false
+    },
+    {
+      "text": "甲殻類あり版となし版を別容器にする",
+      "done": false
+    }
+  ],
+  "created": "2026-09-25T08:42:18Z",
+  "updated": "2026-09-25T08:42:18Z",
+  "closed": null,
+  "reviewed": null,
+  "body": "bodies/t-3yhzh.md",
+  "epic": "e-30t1m",
+  "due": "2026-11-19T14:59:59Z"
+}

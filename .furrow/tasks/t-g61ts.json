@@ -1,0 +1,42 @@
+{
+  "id": "t-g61ts",
+  "title": "出汁とスープストックを仕込んで小分け冷凍する",
+  "status": "backlog",
+  "priority": 340,
+  "value": 5,
+  "effort": 3,
+  "labels": [
+    "batch-cook",
+    "freezing",
+    "stock"
+  ],
+  "repos": [
+    "akira-toriyama/furrow-test"
+  ],
+  "deps": [
+    "t-gfjgk",
+    "t-nz6ts"
+  ],
+  "refs": [],
+  "checklist": [
+    {
+      "text": "氷水で急冷してから冷凍する",
+      "done": false
+    },
+    {
+      "text": "容器に品名と仕込み日を書く",
+      "done": false
+    },
+    {
+      "text": "甲殻類系の出汁を別鍋・別容器に分ける",
+      "done": false
+    }
+  ],
+  "created": "2026-09-25T08:42:18Z",
+  "updated": "2026-09-25T08:42:18Z",
+  "closed": null,
+  "reviewed": null,
+  "body": "bodies/t-g61ts.md",
+  "epic": "e-30t1m",
+  "due": "2026-11-14T14:59:59Z"
+}
