@@ -1,0 +1,45 @@
+{
+  "id": "t-2vhac",
+  "title": "会場費の確定額で食材・飲み物・消耗品の予算配分を引き直す",
+  "status": "backlog",
+  "priority": 200,
+  "value": 4,
+  "effort": 1,
+  "labels": [
+    "blocked-by-venue",
+    "budget"
+  ],
+  "repos": [
+    "akira-toriyama/furrow-test"
+  ],
+  "deps": [
+    "t-2x2dm",
+    "t-3r4ra"
+  ],
+  "refs": [],
+  "checklist": [
+    {
+      "text": "会場費の確定額（延長・清掃費込み）を書く",
+      "done": false
+    },
+    {
+      "text": "残額を食材・飲み物・消耗品に再配分する",
+      "done": false
+    },
+    {
+      "text": "食材枠で [[t-aj8qa]] の献立が作れるか概算で当てる",
+      "done": false
+    },
+    {
+      "text": "足りない場合に削る候補を1つ決めておく",
+      "done": false
+    }
+  ],
+  "created": "2026-09-25T03:47:16Z",
+  "updated": "2026-09-25T03:47:16Z",
+  "closed": null,
+  "reviewed": null,
+  "body": "bodies/t-2vhac.md",
+  "epic": "e-3vdq2",
+  "due": "2026-10-17T14:59:59Z"
+}

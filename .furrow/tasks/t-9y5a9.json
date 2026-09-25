@@ -1,0 +1,35 @@
+{
+  "id": "t-9y5a9",
+  "title": "前菜用のフォカッチャを前日に自分で焼く",
+  "status": "icebox",
+  "priority": 100,
+  "value": 2,
+  "effort": 3,
+  "labels": [
+    "dropped",
+    "menu-design"
+  ],
+  "repos": [
+    "akira-toriyama/furrow-test"
+  ],
+  "deps": [
+    "t-ybhjh"
+  ],
+  "refs": [],
+  "checklist": [
+    {
+      "text": "会場にオーブンがあるか確認する",
+      "done": false
+    },
+    {
+      "text": "発酵2時間が前日仕込み枠に載るか見る",
+      "done": false
+    }
+  ],
+  "created": "2026-09-25T03:47:16Z",
+  "updated": "2026-09-25T03:47:16Z",
+  "closed": null,
+  "reviewed": null,
+  "body": "bodies/t-9y5a9.md",
+  "epic": "e-3vdq2"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "t-q1f6e",
+  "title": "未収の参加費を名指しでリマインドする",
+  "status": "backlog",
+  "priority": 630,
+  "value": 3,
+  "effort": 1,
+  "labels": [
+    "collection",
+    "money",
+    "recurring"
+  ],
+  "repos": [
+    "akira-toriyama/furrow-test"
+  ],
+  "deps": [
+    "t-yvq28"
+  ],
+  "refs": [],
+  "checklist": [
+    {
+      "text": "未収者の名前と金額を文面に入れる",
+      "done": false
+    },
+    {
+      "text": "送った日を名簿に記録する",
+      "done": false
+    }
+  ],
+  "created": "2026-09-25T03:47:16Z",
+  "updated": "2026-09-25T03:47:16Z",
+  "closed": null,
+  "reviewed": null,
+  "body": "bodies/t-q1f6e.md",
+  "epic": "e-ejhek",
+  "due": "2026-11-29T11:00:00Z",
+  "repeat": "FREQ=WEEKLY;UNTIL=20261227T235959Z",
+  "repeat_anchor": "2026-11-29T11:00:00Z"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "t-kce20",
+  "title": "持ち込み備品を全点回収しホールを原状配置に戻す",
+  "status": "backlog",
+  "priority": 550,
+  "value": 4,
+  "effort": 3,
+  "labels": [
+    "d0-night",
+    "equipment",
+    "teardown"
+  ],
+  "repos": [
+    "akira-toriyama/furrow-test"
+  ],
+  "deps": [
+    "t-aq48g",
+    "t-q3ddv"
+  ],
+  "refs": [],
+  "checklist": [
+    {
+      "text": "入室直後にホール全景の写真を撮る",
+      "done": false
+    },
+    {
+      "text": "搬入リストをそのまま回収リストに転用する",
+      "done": false
+    },
+    {
+      "text": "忘れ物を1箇所に集めて写真を撮る",
+      "done": false
+    }
+  ],
+  "created": "2026-09-25T03:47:16Z",
+  "updated": "2026-09-25T03:47:16Z",
+  "closed": null,
+  "reviewed": null,
+  "body": "bodies/t-kce20.md",
+  "epic": "e-ejhek",
+  "due": "2026-11-21T12:45:00Z"
+}

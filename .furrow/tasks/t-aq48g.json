@@ -1,0 +1,49 @@
+{
+  "id": "t-aq48g",
+  "title": "冷蔵と芯温の測定を当日4回行い記録に残す",
+  "status": "backlog",
+  "priority": 760,
+  "value": 4,
+  "effort": 2,
+  "labels": [
+    "d0-ops",
+    "food-safety",
+    "temperature"
+  ],
+  "repos": [
+    "akira-toriyama/furrow-test"
+  ],
+  "deps": [
+    "t-79re5"
+  ],
+  "refs": [],
+  "checklist": [
+    {
+      "text": "16:00 搬入直後の冷蔵庫庫内温度",
+      "done": false
+    },
+    {
+      "text": "17:00 冷蔵庫と仕込み品の中心温度",
+      "done": false
+    },
+    {
+      "text": "18:30 デザートとドリンクの温度",
+      "done": false
+    },
+    {
+      "text": "19:00 肉の芯温",
+      "done": false
+    },
+    {
+      "text": "10℃超が出たら [[t-mgyt3]] のクーラーボックス運用に切り替える",
+      "done": false
+    }
+  ],
+  "created": "2026-09-25T03:47:16Z",
+  "updated": "2026-09-25T03:47:16Z",
+  "closed": null,
+  "reviewed": null,
+  "body": "bodies/t-aq48g.md",
+  "epic": "e-srmw3",
+  "due": "2026-11-21T10:00:00Z"
+}

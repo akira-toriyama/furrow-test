@@ -1,0 +1,39 @@
+{
+  "id": "t-c696y",
+  "title": "敷金の返金入金を確認して会場との清算を閉じる",
+  "status": "backlog",
+  "priority": 590,
+  "value": 4,
+  "effort": 1,
+  "labels": [
+    "deposit",
+    "money",
+    "venue-return"
+  ],
+  "repos": [
+    "akira-toriyama/furrow-test"
+  ],
+  "deps": [
+    "t-3r4ra",
+    "t-9r6s3",
+    "t-gkpht"
+  ],
+  "refs": [],
+  "checklist": [
+    {
+      "text": "契約書の返金期限と金額を控える",
+      "done": false
+    },
+    {
+      "text": "入金を口座明細で確認する",
+      "done": false
+    }
+  ],
+  "created": "2026-09-25T03:47:16Z",
+  "updated": "2026-09-25T03:47:16Z",
+  "closed": null,
+  "reviewed": null,
+  "body": "bodies/t-c696y.md",
+  "epic": "e-ejhek",
+  "due": "2026-12-05T14:59:59Z"
+}

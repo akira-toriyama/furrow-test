@@ -1,0 +1,24 @@
+{
+  "id": "e-4shr4",
+  "title": "会場と日程を確定する",
+  "goal": "会場を本予約し、設備インベントリ・出欠・アレルギー申告が出そろっている",
+  "active": true,
+  "labels": [
+    "event",
+    "venue"
+  ],
+  "repos": [
+    "akira-toriyama/furrow-test"
+  ],
+  "meta": {
+    "event_date": "2026-11-21",
+    "slug": "venue"
+  },
+  "created": "2026-09-25T03:47:15Z",
+  "updated": "2026-09-25T03:47:16Z",
+  "closed": null,
+  "body": "bodies/e-4shr4.md",
+  "deps": [],
+  "standing": false,
+  "pinned": false
+}
