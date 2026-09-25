@@ -31,9 +31,9 @@ session is in. Every command's contract is `furrow <cmd> --help`.
 - A pick you will close in the same session still starts: it goes through
   `in-progress` and bumps the task in flight.
 - Starting a task while another is `in-progress` moves that one back to
-  `ready` with a `furrow note` saying where it stopped; it is never left open
-  beside the new one, and it is resumed — its lane restored, no work implied
-  — once the new one closes.
+  `ready` with a `furrow note` saying where it stopped — the note first,
+  then `set -s ready`; it is never left open beside the new one, and it is
+  resumed — its lane restored, no work implied — once the new one closes.
 - A session owes only its pick: `due-overdue` on tasks it did not take (a
   `waiting` chase, a lapsed repeat) stays red, is named in the closing read,
   and is never snoozed to make lint green (a reschedule that moves every
@@ -75,8 +75,9 @@ session is in. Every command's contract is `furrow <cmd> --help`.
   history (a drop takes `cand-x` off a done task too).
 - Redo work is a new task with a dep on the one it replaces: it inherits
   that task's box, labels and body template, its due is the replaced task's
-  D-N re-derived, and it is one task per counterparty, not one per
-  candidate.
+  D-N re-derived — or today, when that date is already past — and one redo
+  covers every recipient of the thing it redoes (one re-inquiry to A, B and
+  C, not three).
 
 ## `waiting`, and a reply that arrives
 
@@ -85,6 +86,8 @@ session is in. Every command's contract is `furrow <cmd> --help`.
   escalate", not "do it".
 - A close may come straight from `waiting`; `in-progress` is only for work
   you are doing.
+- Before filing an answer, read the decision task's 前提: the knockout
+  conditions live there and nowhere else.
 - A reply that answers part of what was asked closes the task that asked
   for the answered part; every task still waiting for the rest gets a note
   naming the missing sections and keeps its rows and its lane — nothing
@@ -97,14 +100,16 @@ session is in. Every command's contract is `furrow <cmd> --help`.
 - A venue candidate is a label, not a task: `cand-a` / `cand-b` / `cand-c`
   marks the tasks whose plan is rewritten if that candidate drops out, so a
   withdrawal — and a reply, which touches the same tasks — is
-  `furrow ls -l cand-b` (every lane, done included). A task that merely
-  names a candidate carries no label; the comparison table itself is
-  `notes/venue-compare.md`.
+  `furrow ls -l cand-b` (every lane, done included). `cand-x` also marks a
+  task whose clause counts the surviving candidates (the C chase task
+  carries all three). A task that merely names a candidate carries no
+  label; the comparison table itself is `notes/venue-compare.md`.
 - A candidate that fails a knockout condition (the decision task's 前提)
   drops the moment the failing answer lands, and so does one that withdraws
   for its own reasons; the session filing the answer executes the drop, and
-  the decision task alone records why (the box's body records nothing; the
-  other rewrites cite the drop, not the reason).
+  the decision task alone records why among tasks (the box's body records
+  nothing; the other rewrites cite the drop, not the reason) — under
+  `notes/` the 運用 line says where the reason goes.
 - The 「候補が 2 件残る場合に限る」 clause on a chase task guards its timeout
   — dropping a candidate that never answered — never a knockout or a
   withdrawal: those drop the candidate whatever the count, and at one
@@ -129,6 +134,15 @@ session is in. Every command's contract is `furrow <cmd> --help`.
   same pass.
 - A dropped candidate is not a 落選: the decline row counts the survivors
   only.
+- A candidate is a label, never an edge: a drop removes no dependency —
+  every edge on this board is a population edge that survives with the
+  other candidates.
+- `ls -l cand-x` is the rewrite set; the tasks whose 前提 merely names the
+  candidate are found with `grep -l` over `.furrow/bodies` (a one-letter
+  name is not searchable) and get only that 前提 retired.
+- A drop never moves a due: a chase date on a task it rewrites stays as it
+  is, and a due that belonged only to the dropped member is named in the
+  note.
 
 ## The event date moves
 
@@ -141,7 +155,10 @@ session is in. Every command's contract is `furrow <cmd> --help`.
   holiday — which the body marks with a line beginning `固定:` (the word
   alone is also a verb; only the line prefix is the marker) and a
   reschedule leaves where it is (a task to confirm it with the other side,
-  not a shift, is what moves it).
+  not a shift, is what moves it) — and a done task's due, which is history
+  (above). When the shift pushes a derived due past a `固定:` one, the
+  inversion stands, and `due-inversion` names it, until the confirmation
+  lands.
 - A date in 待ち先, 現状 or 結果 is a log of something that happened and
   never moves; a date in 次の一手, 前提 or 完了条件 is derived.
 - A reschedule starts from `furrow ls -n 0 --json` (`brief` shows a
@@ -161,5 +178,8 @@ session is in. Every command's contract is `furrow <cmd> --help`.
   line under it carries the new one).
 - A note that copies a body's text follows the body: what the copy wants
   and the body lacks goes into the body (or its checklist) first.
+- `notes/venue-compare.md`'s 運用 line (a dropped candidate's row and column
+  stay, the reason goes into 基本情報's 状態 cell, a table without one gets a
+  dated line) applies to every note that carries a candidate column.
 - `notes/` you commit yourself; `furrow sync` publishes only what furrow
   wrote under `.furrow/`.
