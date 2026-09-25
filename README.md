@@ -5,7 +5,7 @@ scale, kept so a Claude Code session can read a real one instead of a
 hello-world. The subject is a one-day restaurant — rent a kitchen, seat
 twelve friends, serve five courses on 2026-11-21 — planned as five boxes
 that depend on one another (venue → menu → prep → day-of → wrap-up), a
-hundred tasks, 178 dependency edges, dated work, checklists, external
+hundred tasks, 181 dependency edges, dated work, checklists, external
 waits, and a recurring task. The dinner is fictional; the board is not.
 
 ## What to read it for
