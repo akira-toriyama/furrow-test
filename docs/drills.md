@@ -28,7 +28,9 @@ operator drives the run, the operator syncs; the session then runs
 
 - **Read-only.** Allowed: `brief`, `ls`, `show`, `next`, `revisit`, `search`,
   `stats`, `board`, `lint`, `vocab`, `dep --list`, `epic ls|show|dep --list`,
-  and any `--help`. Forbidden: everything that writes — `add`, `set`, `move`,
+  and any `--help`, plus reading any file under `.furrow/` (the config
+  included — `furrow config` has no read form; `furrow board` prints the
+  settings that matter) and under `notes/`. Forbidden: everything that writes — `add`, `set`, `move`,
   `done`, `dep` without `--list`, `note`, `edit`, `attach`, `check`, `label`,
   `ref`, `repo`, `reorder`, `retitle`, `value`, `effort`, `review`, `apply`,
   `archive`, `rm`, `tidy`, `upgrade`, `config set`, `epic add|set|activate|
@@ -39,9 +41,19 @@ operator drives the run, the operator syncs; the session then runs
   request, this file's rules, the repo's `README.md` and `CLAUDE.md`, and
   the board. Whatever it needs beyond those, `furrow --help`, `furrow <cmd>
   --help`, and `furrow lint` is a hesitation by definition.
+- **The log's shape is the four sections under "What to record", handed to
+  the session inline with the rules.** A run never opens `docs/` — not this
+  file's results, not a sibling log under `docs/drills/runs/` — so the
+  operator passes the rules, the recording format and the output path in
+  the request itself. A stop on "what does a log look like" is the
+  protocol's cost, not the board's; the fourth run paid it five times before
+  this line existed.
 - **Write down the commands you would have run**, in order, as a fenced
   block. A drill's deliverable is that plan plus the hesitation log; the
-  plan is never executed.
+  plan is never executed. An edit to a hand-kept file under `notes/`
+  belongs in the same block, as comment lines naming the file and the lines
+  that change: the plan covers the whole board, `notes/` included, and is
+  never executed either way.
 
 ## The four requests
 
@@ -123,6 +135,11 @@ does not carry. Undercounting is the failure mode; when unsure, record it.
 | 2026-09-24 (3) | f497db3 | dev (main at ac777e8) | reschedule | no | 22 | 1 |
 | 2026-09-24 (3) | f497db3 | dev (main at ac777e8) | invalidate | no | 24 | 1 |
 | 2026-09-24 (3) | f497db3 | dev (main at ac777e8) | **total** | 0 / 4 | 89 | 6 |
+| 2026-09-24 (4) | 1429073 | dev (main at ac777e8) | orient | **yes** | 17 | 2 |
+| 2026-09-24 (4) | 1429073 | dev (main at ac777e8) | unblock | no | 24 | 0 |
+| 2026-09-24 (4) | 1429073 | dev (main at ac777e8) | reschedule | no | 24 | 2 |
+| 2026-09-24 (4) | 1429073 | dev (main at ac777e8) | invalidate | no | 25 | 1 |
+| 2026-09-24 (4) | 1429073 | dev (main at ac777e8) | **total** | 1 / 4 | 90 | 5 |
 
 The 2026-09-15 run predates this file: its four logs were not kept, only
 the totals, and the 21 gaps it filed are the first members of `e-axjj`.
@@ -166,6 +183,55 @@ the flat total as the protocol's floor rather than the board's score: a
 session told that undercounting is the failure mode records about twenty
 stops whatever the board, and the useful signal is which rows appear at
 the top, not how many rows there are.
+
+The fourth run is the first row that is a delta rather than a new
+baseline: its `.furrow/` tree is byte-identical to the third run's
+(`git diff f497db3 1429073 -- .furrow` is empty), only `notes/` changed —
+every note names tasks by title and says whether it is a draft or settled —
+and furrow is the same build. 89 became 90, and orient answered
+`could_act_confidently: true` for the first time under the protocol: one
+defensible pick with a complete close plan, after eleven unplanned reads.
+The notes fix did what it was meant to: no row in any of the four logs
+names the seed's key namespace, and the "deliverable already sitting in
+`notes/`" stop shrank to "the draft holds two questions the task's
+checklist does not count". Eight of the 90 rows are the cost of the run's
+own setup, not the board's: five stopped on the shape of the log (the
+sessions were forbidden `docs/`), two on the operator's instruction to
+reach `.furrow/` only through the CLI (the protocol never said so), one on
+whether a plan may name `notes/` edits — all settled in the rules above.
+The rows at the top fall into the third run's three classes, in a different
+order. First, the rules, now the largest class and the same holes as
+before: who executes a knockout that an arriving answer fails, how a partly
+answered inquiry is recorded, whether filing an inbound fact counts against
+one-in-flight, whether a close may leave `waiting` directly, `--reword` for
+a checklist row that counts a population where CLAUDE.md names only
+`--rm`, whether `cand-X` comes off after the rewrite, and `notes/` as living
+documents beside frozen done bodies. One CLAUDE.md line was measured
+against the board and cannot be read as written — "a handoff a body names
+without an edge is a missing edge": 69 of this board's 181 `[[t-id]]`
+links have no dependency edge in either direction, so a lint for it would
+fire 69 times on a board whose graph is right, and orient spent three
+`dep --list` reads on the sentence. Second, furrow: a relative due shift
+(the fourth reschedule in a row to type 78 absolute stamps, this time
+converted by hand from the UTC instants `ls --json` prints), a due that is
+promised to a third party and must not move with the event, a dependency
+edge that carries no reason (the "dependencies that ran through B" clause
+resolved to zero edges, because B lived only in prose), `revisit`'s text
+table printing no signal (third run; `dep_done` read as "all deps done"
+nearly sent orient to a still-blocked task), `attach` refusing a PDF by its
+own help (third run), `search` matching a one-letter candidate as a
+substring (third run), and four `--help` gaps. Third, content, and new: two
+bodies (`t-qw8jc`, `t-19nfz`) say "if C has not replied by 9/24, drop C and
+decide between A and B" — the run fell on 9/24, and B's withdrawal makes
+the sentence self-contradictory; a date-bound rule inside prose is what the
+calendar rots first, and no lint reaches it. Two things were measured for
+lint on this run. A dependency whose due falls later than its dependent's:
+none on this board, one on the board before the rebuild (`t-fejrz` →
+`t-ehf4f`, found by hand during the rebuild) — the one new lint code the
+run justifies. A done task with an untouched checklist: all four done tasks
+here are 0/N, 0 of the board's 372 rows are ticked, and two drills stopped
+on it — that stays a content fix and no lint, by the earlier decision that a
+close settles the task, not its checklist.
 
 The second run measured the config change (`provenance_markers`,
 in-progress ahead of ready) plus a nine-line CLAUDE.md, with seven furrow
