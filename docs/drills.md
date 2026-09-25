@@ -148,6 +148,11 @@ does not carry. Undercounting is the failure mode; when unsure, record it.
 | 2026-09-25 (5) | 9896fee | dev (main at eb85970) | reschedule | no | 28 | 2 |
 | 2026-09-25 (5) | 9896fee | dev (main at eb85970) | invalidate | **yes** | 25 | 2 |
 | 2026-09-25 (5) | 9896fee | dev (main at eb85970) | **total** | 3 / 4 | 101 | 8 |
+| 2026-09-25 (6) | 1fca1cb | dev (main at eb85970) | orient | **yes** | 23 | 1 |
+| 2026-09-25 (6) | 1fca1cb | dev (main at eb85970) | unblock | **yes** | 24 | 1 |
+| 2026-09-25 (6) | 1fca1cb | dev (main at eb85970) | reschedule | **yes** | 23 | 3 |
+| 2026-09-25 (6) | 1fca1cb | dev (main at eb85970) | invalidate | **yes** | 29 | 2 |
+| 2026-09-25 (6) | 1fca1cb | dev (main at eb85970) | **total** | 4 / 4 | 99 | 7 |
 
 The 2026-09-15 run predates this file: its four logs were not kept, only
 the totals, and the 21 gaps it filed are the first members of `e-axjj`.
@@ -294,6 +299,56 @@ unblock for the third run in a row and is filed beside them; `revisit`'s
 per-dep `dep_done` (four runs), the relative due shift (five), and the
 missing chase interval behind a `waiting` due (two drills) go as notes onto
 the tasks that already carry them.
+
+The sixth run measures the fifth run's answers. CLAUDE.md went from 77 to
+104 lines (still ten bullets) with the thirteen holes two runs or two drills
+had hit and the four top-three questions folded in; the C chase task took
+`cand-a`/`cand-b` (its cutoff depends on the candidate count); four bodies
+mark a date the other side or the calendar fixed with a `固定` line; the
+intake-questions task names the criterion for its two extra questions;
+`notes/venue-compare.md` says what happens to a dropped candidate's row;
+the seed was rebuilt (`1fca1cb`, new ids) and furrow did not move. 101
+became 99 and every drill answered `could_act_confidently: true` —
+reschedule for the first time, because the `固定` lines name the exceptions
+the fifth run had to guess and "a done task's title, due and 結果 stay"
+settles the guest poll. Of the fifth run's twelve top-three rows none
+returns as a rule the board lacks: orient's tie-break did not stop the
+session (the pick was forced), its two-question criterion now stops it one
+hop later (the receiver's five questions are a slash-separated string that
+has to parse to exactly five, and a 宗教・信条 question the body demands has
+no slot among them), and the promotion is executed as written; unblock's
+partial-answer collision and its yes/no cells read "already prose";
+invalidate's cutoff reversal is caught (the chase task now carries
+`cand-b`, so the completion check reaches it); reschedule's external dates
+are the `固定` lines. What rose instead is a class the fifth run barely
+had: rows whose remedy column says the rule was already there and the stop
+was finding it — 15 rows against 3, eleven of them in unblock — the cost of
+a 104-line rulebook read under a request, and the reason the next change
+to this file should be its shape, not more lines. Four questions the new
+lines opened: whether a label on a done task is a rewrite (labels and refs
+are not history; the drop's own check needs the label off); whether the
+運用 line for a dropped candidate's row covers the tables that put
+candidates in columns (the column stays, the reason goes into 基本情報's
+状態 cell, a table without one gets a dated line); whether `固定` is a
+marker or a verb (12 of the 16 hits are the verb — the marker is a line
+beginning `固定:`); and whether a lapsed repeat's "due is not pushed"
+survives a reschedule that moves every derived due (it does; the series'
+`UNTIL` moves). Those, and the two-run items this run produced (the
+operator's "dispose" is the in-place rewrite; a withdrawal is not a 落選; a
+same-session start-and-close still goes through `in-progress`; whether the
+survivors' work is finished is read from the note's table; dates in
+待ち先/現状/結果 are logs; the redo task's template), are folded into
+CLAUDE.md in the commit after this run and wait for a seventh. Three
+claims were measured. `[next].limit` was guessed a second time and still
+does not exist (the cap is `brief -n`, default 3). `furrow search` does
+miss checklist text (`下見枠` lives in one shard's checklist and `search`
+returns nothing — filed after the third run). A `due-inversion` that fires
+on an EQUAL due, asked for when the frozen 11/03 trial cook and its shifted
+dependency land on the same day, would fire on a board whose dates are
+right — 29 tasks share an instant with another today, and one open
+dependency pair already does — so the zero-slack day stays a content note,
+not a lint. reschedule's top row is the shift primitive for the sixth run
+in a row; nothing on this board's side can remove it.
 
 The second run measured the config change (`provenance_markers`,
 in-progress ahead of ready) plus a nine-line CLAUDE.md, with seven furrow
