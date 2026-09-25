@@ -1,0 +1,35 @@
+{
+  "id": "t-5hafz",
+  "title": "調理風景のタイムラプス動画を撮る",
+  "status": "icebox",
+  "priority": 170,
+  "value": 1,
+  "effort": 2,
+  "labels": [
+    "nice-to-have",
+    "photo"
+  ],
+  "repos": [
+    "akira-toriyama/furrow-test"
+  ],
+  "deps": [
+    "t-8rx4p"
+  ],
+  "refs": [],
+  "checklist": [
+    {
+      "text": "三脚かスマホスタンドの要否を確認",
+      "done": false
+    },
+    {
+      "text": "厨房の電源とスマホの充電を確保",
+      "done": false
+    }
+  ],
+  "created": "2026-09-25T06:38:23Z",
+  "updated": "2026-09-25T06:38:23Z",
+  "closed": null,
+  "reviewed": null,
+  "body": "bodies/t-5hafz.md",
+  "epic": "e-20c70"
+}

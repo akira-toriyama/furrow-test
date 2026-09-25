@@ -1,0 +1,47 @@
+{
+  "id": "t-axk0n",
+  "title": "食事制限申告フォームを作成し配布して出席者全員分を回収する",
+  "status": "backlog",
+  "priority": 435,
+  "value": 5,
+  "effort": 2,
+  "labels": [
+    "dietary",
+    "guest-comms"
+  ],
+  "repos": [
+    "akira-toriyama/furrow-test"
+  ],
+  "deps": [
+    "t-hjkxq",
+    "t-qxzdt"
+  ],
+  "refs": [
+    "file:notes/dietary-form.md:1"
+  ],
+  "checklist": [
+    {
+      "text": "質問を 5 問に絞ったフォームを作る",
+      "done": false
+    },
+    {
+      "text": "出席見込み者に配布する",
+      "done": false
+    },
+    {
+      "text": "「制限なし」も明示回答として記録する",
+      "done": false
+    },
+    {
+      "text": "回答を申告表に転記する",
+      "done": false
+    }
+  ],
+  "created": "2026-09-25T06:38:23Z",
+  "updated": "2026-09-25T06:38:23Z",
+  "closed": null,
+  "reviewed": null,
+  "body": "bodies/t-axk0n.md",
+  "epic": "e-n5tqh",
+  "due": "2026-10-10T14:59:59Z"
+}

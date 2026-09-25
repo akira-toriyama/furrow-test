@@ -1,0 +1,35 @@
+{
+  "id": "t-xecf4",
+  "title": "5品それぞれにワインを1本ずつ合わせるペアリングを組む",
+  "status": "icebox",
+  "priority": 110,
+  "value": 2,
+  "effort": 3,
+  "labels": [
+    "drinks",
+    "dropped"
+  ],
+  "repos": [
+    "akira-toriyama/furrow-test"
+  ],
+  "deps": [
+    "t-zvykb"
+  ],
+  "refs": [],
+  "checklist": [
+    {
+      "text": "5本の合計金額を概算する",
+      "done": false
+    },
+    {
+      "text": "グラス数が足りるか [[t-t62zh]] の食器数で確認する",
+      "done": false
+    }
+  ],
+  "created": "2026-09-25T06:38:23Z",
+  "updated": "2026-09-25T06:38:23Z",
+  "closed": null,
+  "reviewed": null,
+  "body": "bodies/t-xecf4.md",
+  "epic": "e-edey3"
+}

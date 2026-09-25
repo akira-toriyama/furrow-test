@@ -1,0 +1,37 @@
+{
+  "id": "t-3890v",
+  "title": "参加費をゲスト12名から集金して未収ゼロにする",
+  "status": "backlog",
+  "priority": 620,
+  "value": 5,
+  "effort": 2,
+  "labels": [
+    "collection",
+    "money",
+    "settlement"
+  ],
+  "repos": [
+    "akira-toriyama/furrow-test"
+  ],
+  "deps": [
+    "t-2hf6s"
+  ],
+  "refs": [],
+  "checklist": [
+    {
+      "text": "送金先と期限を精算の1枚に併記する",
+      "done": false
+    },
+    {
+      "text": "現金受領分はその場で名簿に記録する",
+      "done": false
+    }
+  ],
+  "created": "2026-09-25T06:38:23Z",
+  "updated": "2026-09-25T06:38:23Z",
+  "closed": null,
+  "reviewed": null,
+  "body": "bodies/t-3890v.md",
+  "epic": "e-r1w6s",
+  "due": "2026-12-03T14:59:59Z"
+}

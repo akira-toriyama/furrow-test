@@ -1,0 +1,47 @@
+{
+  "id": "t-gccr4",
+  "title": "確定会場の設備インベントリ確定版を凍結して献立 epic へ引き渡す",
+  "status": "backlog",
+  "priority": 480,
+  "value": 5,
+  "effort": 2,
+  "labels": [
+    "handoff",
+    "inventory"
+  ],
+  "repos": [
+    "akira-toriyama/furrow-test"
+  ],
+  "deps": [
+    "t-2bjdh",
+    "t-76q4d"
+  ],
+  "refs": [
+    "file:notes/venue-final-inventory.md:1"
+  ],
+  "checklist": [
+    {
+      "text": "確定会場の列を抜き出して確定版シートを作る",
+      "done": false
+    },
+    {
+      "text": "コンロとオーブンの同時使用可否を数値で確定する",
+      "done": false
+    },
+    {
+      "text": "持ち込み酒可否とゴミ規定を同じシートに載せる",
+      "done": false
+    },
+    {
+      "text": "menu 側の task に refs を渡す",
+      "done": false
+    }
+  ],
+  "created": "2026-09-25T06:38:23Z",
+  "updated": "2026-09-25T06:38:23Z",
+  "closed": null,
+  "reviewed": null,
+  "body": "bodies/t-gccr4.md",
+  "epic": "e-n5tqh",
+  "due": "2026-10-10T14:59:59Z"
+}

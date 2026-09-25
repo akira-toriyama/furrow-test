@@ -1,0 +1,42 @@
+{
+  "id": "t-3k7ca",
+  "title": "16:30 までに欠品分の買い出しを終えて厨房に戻る",
+  "status": "backlog",
+  "priority": 750,
+  "value": 3,
+  "effort": 2,
+  "labels": [
+    "d0-ops",
+    "recovery",
+    "shopping"
+  ],
+  "repos": [
+    "akira-toriyama/furrow-test"
+  ],
+  "deps": [
+    "t-bxy6s",
+    "t-gjak9"
+  ],
+  "refs": [],
+  "checklist": [
+    {
+      "text": "欠品ゼロならその場で done にする",
+      "done": false
+    },
+    {
+      "text": "レシートを保管（wrap の精算用）",
+      "done": false
+    },
+    {
+      "text": "現金と交通系IC の残高を確認",
+      "done": false
+    }
+  ],
+  "created": "2026-09-25T06:38:23Z",
+  "updated": "2026-09-25T06:38:23Z",
+  "closed": null,
+  "reviewed": null,
+  "body": "bodies/t-3k7ca.md",
+  "epic": "e-20c70",
+  "due": "2026-11-21T07:30:00Z"
+}

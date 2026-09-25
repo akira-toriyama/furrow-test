@@ -1,0 +1,36 @@
+{
+  "id": "t-j4cj7",
+  "title": "会場の評価を記録して次回候補リストを更新する",
+  "status": "icebox",
+  "priority": 130,
+  "value": 2,
+  "effort": 1,
+  "labels": [
+    "next-time",
+    "venue-review"
+  ],
+  "repos": [
+    "akira-toriyama/furrow-test"
+  ],
+  "deps": [
+    "t-nhmbp"
+  ],
+  "refs": [],
+  "checklist": [
+    {
+      "text": "撤収動線(搬出口・エレベーター)の使い勝手を書く",
+      "done": false
+    },
+    {
+      "text": "次も使うかを Yes/No で言い切る",
+      "done": false
+    }
+  ],
+  "created": "2026-09-25T06:38:23Z",
+  "updated": "2026-09-25T06:38:23Z",
+  "closed": null,
+  "reviewed": null,
+  "body": "bodies/t-j4cj7.md",
+  "epic": "e-r1w6s",
+  "due": "2026-12-12T14:59:59Z"
+}
