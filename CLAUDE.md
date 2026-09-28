@@ -146,26 +146,33 @@ session is in. Every command's contract is `furrow <cmd> --help`.
 
 ## The event date moves
 
-- The event date lives in ONE place: `event_date` in the venue box's meta
-  (`furrow epic show 会場 --json | jq -r .meta.event_date` — `会場` is a
-  unique title substring; ids change on every regeneration, titles do not).
-- Every `due` and every D-N in a body is derived from it, except a date the
-  other side set or the calendar fixed — a venue's application or payment
-  deadline, a booked appointment, a slot chosen because the day is a public
-  holiday — which the body marks with a line beginning `固定:` (the word
-  alone is also a verb; only the line prefix is the marker) and a
-  reschedule leaves where it is (a task to confirm it with the other side,
-  not a shift, is what moves it) — and a done task's due, which is history
-  (above). When the shift pushes a derived due past a `固定:` one, the
-  inversion stands, and `due-inversion` names it, until the confirmation
-  lands.
+- The event date lives in ONE place: the venue box's `anchor` field
+  (`furrow epic show 会場 --json | jq -r .anchor` — `会場` is a unique title
+  substring; ids change on every regeneration, titles do not).
+- Every due that follows it carries `anchor: <the venue box>`, so the two
+  sets are selectors rather than prose: `-q anchor:<box>` is the derived
+  set, `-q 'has:due no:anchor'` the dates the other side or the calendar
+  fixed — a venue's application or payment deadline, a booked appointment, a
+  slot chosen because the day is a public holiday. Those carry no anchor and
+  a reschedule leaves them where they are (a task to confirm one with the
+  other side, not a shift, is what moves it). A done task's due is history
+  (above) and stays. A repeating task carries no anchor either: its series
+  follows `repeat_anchor`.
+- The body still marks a fixed date with a line beginning `固定:` (the word
+  alone is also a verb; only the line prefix is the marker). That line is
+  now an EXPLANATION for the reader, not the mechanism — the absent
+  `anchor` is what the machine reads. When the shift pushes a derived due
+  past a fixed one, the inversion stands, and `due-inversion` names it,
+  until the confirmation lands.
 - A date in 待ち先, 現状 or 結果 is a log of something that happened and
   never moves; a date in 次の一手, 前提 or 完了条件 is derived.
-- A reschedule starts from `furrow ls -n 0 --json` (`brief` shows a
-  window), changes the meta first, then the derived dues, then the body
-  lines and checklist rows that spell a derived date (`edit --body`,
-  `check --reword`), and re-checks a candidate dropped for a date-specific
-  reason (one that also fails a knockout stays out).
+- A reschedule is `furrow epic set 会場 --anchor <the new day>`: it previews
+  every follower's due old → new, applies on `--yes` in one write, and is a
+  no-op on the same day again. It moves no prose, so the body lines and
+  checklist rows that spell a derived date are still rewritten by hand
+  (`edit --body`, `check --reword`), and a candidate dropped for a
+  date-specific reason is re-checked (one that also fails a knockout stays
+  out).
 
 ## `notes/`
 

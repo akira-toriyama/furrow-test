@@ -37,10 +37,11 @@
     }
   ],
   "created": "2026-09-25T08:42:18Z",
-  "updated": "2026-09-25T08:42:18Z",
+  "updated": "2026-09-28T09:48:17Z",
   "closed": null,
   "reviewed": null,
   "body": "bodies/t-f5pva.md",
   "epic": "e-1rxdr",
-  "due": "2026-09-22T09:00:00Z"
+  "due": "2026-09-22T09:00:00Z",
+  "anchor": "e-1rxdr"
 }

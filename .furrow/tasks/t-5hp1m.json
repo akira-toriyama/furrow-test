@@ -39,10 +39,11 @@
     }
   ],
   "created": "2026-09-25T08:42:18Z",
-  "updated": "2026-09-25T08:42:18Z",
+  "updated": "2026-09-28T09:48:17Z",
   "closed": null,
   "reviewed": null,
   "body": "bodies/t-5hp1m.md",
   "epic": "e-m7fnh",
-  "due": "2026-11-21T12:55:00Z"
+  "due": "2026-11-21T12:55:00Z",
+  "anchor": "e-1rxdr"
 }

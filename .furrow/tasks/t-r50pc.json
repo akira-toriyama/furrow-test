@@ -34,10 +34,11 @@
     }
   ],
   "created": "2026-09-25T08:42:18Z",
-  "updated": "2026-09-25T08:42:18Z",
+  "updated": "2026-09-28T09:48:17Z",
   "closed": null,
   "reviewed": null,
   "body": "bodies/t-r50pc.md",
   "epic": "e-gx6nj",
-  "due": "2026-11-19T12:00:00Z"
+  "due": "2026-11-19T12:00:00Z",
+  "anchor": "e-1rxdr"
 }

@@ -16,6 +16,10 @@ jq -c . seed/epics.ndjson | while IFS= read -r line; do
   for kv in $(printf '%s' "$line" | jq -r '.meta | to_entries[] | "\(.key)=\(.value)"'); do
     set -- "$@" --meta "$kv"
   done
+  # The box's day must exist before the task batch: a task line's `anchor`
+  # is refused unless the box it names already carries one.
+  anchor=$(printf '%s' "$line" | jq -r '.anchor // empty')
+  if [ -n "$anchor" ]; then set -- "$@" --anchor "$anchor"; fi
   "$@" >/dev/null
 done
 jq -c . seed/epics.ndjson | while IFS= read -r line; do

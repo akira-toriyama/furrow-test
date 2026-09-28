@@ -11,14 +11,14 @@
     "akira-toriyama/furrow-test"
   ],
   "meta": {
-    "event_date": "2026-11-21",
     "slug": "venue"
   },
   "created": "2026-09-25T08:42:18Z",
-  "updated": "2026-09-25T08:42:18Z",
+  "updated": "2026-09-28T09:51:29Z",
   "closed": null,
   "body": "bodies/e-1rxdr.md",
   "deps": [],
   "standing": false,
-  "pinned": false
+  "pinned": false,
+  "anchor": "2026-11-21"
 }
