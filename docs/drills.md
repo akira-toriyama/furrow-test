@@ -158,6 +158,30 @@ does not carry. Undercounting is the failure mode; when unsure, record it.
 | 2026-09-25 (7) | 6154cea | dev (main at eb85970) | reschedule | **yes** | 30 | 0 |
 | 2026-09-25 (7) | 6154cea | dev (main at eb85970) | invalidate | **yes** | 24 | 1 |
 | 2026-09-25 (7) | 6154cea | dev (main at eb85970) | **total** | 4 / 4 | 98 | 3 |
+| 2026-09-28 (8) | c6f69aa | dev (v7.0.0 line — see below) | reschedule | **yes** | 36 | 1 |
+
+The eighth run is **one drill, not four**: it was taken right after the board
+moved onto furrow v7.0.0's `anchor` field, to measure that one change, so it has
+no **total** row and its 36 is not comparable with a four-drill total. Two
+protocol notes, both disclosed rather than smoothed: the operator's own session
+was mid-release, so the `furrow dev` binary the wrapper builds from `origin/main`
+was rebuilt once during the run (from the v7.0.0 commit to two help-text fixes
+after it — neither touches a query, a date or the anchor); and `furrow version`
+still prints no commit, which is why the column names a line rather than a hash
+(the gap `t-63r8` names).
+
+What it says: reschedule reached `could_act_confidently: true` on the mechanism
+for the first time — 80 of the 95 dated tasks carry `anchor`, so the date move
+is one `furrow epic set 会場 --anchor 2026-11-28 --yes` instead of the 87
+hand-typed stamps the fifth run paid, and every hesitation is about the 15 that
+do not ride it. The three that mattered: the 7 repeating series, whose `UNTIL`
+CLAUDE.md describes in one clause that reads as covering more than it does;
+`-q 'anchor:会場'` answering `(no tasks)` rather than erroring, which invites the
+opposite conclusion — that nothing is anchored — where the sibling `-e 会場`
+resolves the same substring (`-q 'epic:会場'` is silent the same way, so this is
+the `-q` grammar's shape and not the anchor field's); and a derived due the shift
+pushes past a fixed deadline no task owns, leaving a `due-inversion` nothing in
+the board will ever clear.
 
 The 2026-09-15 run predates this file: its four logs were not kept, only
 the totals, and the 21 gaps it filed are the first members of `e-axjj`.
