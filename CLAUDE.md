@@ -16,7 +16,9 @@ session is in. Every command's contract is `furrow <cmd> --help`.
   not how long a task has been overdue.
 - An overdue repeating task is a lapsed occurrence, not today's work: it
   runs on its next scheduled day, its due is not pushed to clear the lint,
-  and a reschedule moves only its series' `UNTIL`.
+  and a reschedule moves that one's `UNTIL` alone — its due stays where it
+  lapsed. This covers the LAPSED occurrence only; for a repeat that has not
+  lapsed see "The event date moves".
 - The due band spans every box, so the pick is taken wherever it sits —
   never `epic activate` to reach it — and a box's `waits` orders the boxes,
   not their tasks: a task with no unmet dep is workable whatever its box
@@ -156,8 +158,11 @@ session is in. Every command's contract is `furrow <cmd> --help`.
   slot chosen because the day is a public holiday. Those carry no anchor and
   a reschedule leaves them where they are (a task to confirm one with the
   other side, not a shift, is what moves it). A done task's due is history
-  (above) and stays. A repeating task carries no anchor either: its series
-  follows `repeat_anchor`.
+  (above) and stays. A repeating task carries no anchor either — a series
+  follows `repeat_anchor` — so a reschedule moves one BY HAND: its due and
+  its rule's `UNTIL` both shift by the same delta as the day. Leaving those
+  dues put inverts their dep edges, and `due-inversion` only reports that
+  after the fact.
 - The body still marks a fixed date with a line beginning `固定:` (the word
   alone is also a verb; only the line prefix is the marker). That line is
   now an EXPLANATION for the reader, not the mechanism — the absent
